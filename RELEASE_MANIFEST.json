@@ -1,7 +1,7 @@
 {
   "schemaVersion": "dungeonq.source-release/v1",
   "profile": "SYNTHETIC_ONLY",
-  "generatedAt": "2026-09-16T07:40:57.599Z",
+  "generatedAt": "2026-09-16T07:53:37.389Z",
   "privateHistoryIncluded": false,
   "entries": [
     {
@@ -81,8 +81,8 @@
     },
     {
       "path": "astra-site/index.html",
-      "bytes": 7300,
-      "sha256": "c1fa8eba139eb7df7f2c9a7d2c641e04f75402273effd000cc3bd949fcb1bc3b"
+      "bytes": 7349,
+      "sha256": "c868b554fd0b1277fc5e8e0170e9c5fc1731ea135a83c3276dc0a08470bd4e43"
     },
     {
       "path": "astra/index.html",
