@@ -1,0 +1,76 @@
+{
+  "name": "dungeonq-astra",
+  "version": "0.5.0",
+  "private": true,
+  "description": "A bounded GPT-6 Astra safety rehearsal with separate approval, real local MCP and synthetic evidence.",
+  "license": "Apache-2.0",
+  "author": "DungeonQ contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ranopha/dungeonq-astra.git"
+  },
+  "homepage": "https://github.com/Ranopha/dungeonq-astra#readme",
+  "bugs": {
+    "url": "https://github.com/Ranopha/dungeonq-astra/issues"
+  },
+  "keywords": [
+    "webmcp",
+    "cybersecurity",
+    "deception",
+    "deterministic",
+    "synthetic-testing"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=24.15.0"
+  },
+  "scripts": {
+    "astra": "node scripts/astra.mjs",
+    "test:astra": "node --test tests/astra.test.mjs",
+    "astra:proof": "node scripts/astra-proof.mjs",
+    "astra:site": "node scripts/build-astra-site.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "demo:proof": "node scripts/demo-proof.mjs",
+    "mcp:client": "node scripts/mcp-client.mjs",
+    "release:prepare": "node scripts/prepare-release.mjs",
+    "verify:source": "node scripts/verify-source.mjs",
+    "amazon": "node scripts/amazon.mjs",
+    "verify:assistant-evidence": "node scripts/verify-assistant-evidence.mjs",
+    "test:amazon": "node --test tests/response-governance.test.mjs tests/mcp-server.test.mjs tests/assistant.test.mjs",
+    "dev": "vinext dev",
+    "build": "vinext build",
+    "start": "wrangler dev --config dist/server/wrangler.json",
+    "test": "node --test",
+    "test:governance": "node --test tests/governance-core.test.mjs",
+    "test:workbench": "node --test tests/workbench.test.mjs",
+    "workbench": "node scripts/workbench.mjs",
+    "acceptance:company": "node scripts/company-acceptance.mjs",
+    "verify:company-report": "node scripts/verify-company-report.mjs",
+    "verify": "node scripts/verify.mjs",
+    "audit": "node scripts/audit.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "npm test && npm run verify && npm run audit && npm run typecheck && npm run build",
+    "simulate": "node cli/run.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-server-dom-webpack": "19.2.8",
+    "vinext": "1.0.0-beta.8"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.54.8",
+    "@cloudflare/workers-types": "5.20260911.1",
+    "@openai/sites-vite-plugin": "0.2.0",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitejs/plugin-rsc": "0.5.34",
+    "typescript": "5.9.3",
+    "vite": "8.2.2",
+    "wrangler": "4.131.1"
+  }
+}

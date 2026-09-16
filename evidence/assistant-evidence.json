@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "dungeonq.assistant-evidence/v1",
+  "response": {
+    "requestId": "request-5e11bce4-bb47-4169-86da-bc655465acf6",
+    "assetId": "syn-orders-session",
+    "eventId": "event-06c3a02b-dd65-46c9-8909-37dbb250ba85",
+    "expectedVersion": 0,
+    "draft": {
+      "assetIds": [
+        "syn-orders-session"
+      ],
+      "connectorVersion": "sqlite-fixture/v1",
+      "dependencyDigest": "db4b7eefb7011e513ab56a25cd9e9a49008529d551b7d6ea63d071ae9f7350f8",
+      "effect": "SYNTHETIC_CONTAINMENT",
+      "expiresAt": 1789542135370,
+      "leaseMs": 60000,
+      "maxConcurrent": 1,
+      "maxEffects": 1,
+      "profile": "SYNTHETIC_ONLY",
+      "runbookVersion": "containment/v1",
+      "schemaVersion": "dungeonq.lab-grant-draft/v1",
+      "tenantId": "tenant-lab"
+    },
+    "manifestDigest": "d425fbbea110a05cfbc17d2321170123d01035d88511f74ce85c4b51013462c6",
+    "state": "COMPLETED",
+    "grantId": "67d016bf-a9eb-47ae-bce9-f83fbd6ad5d5",
+    "jobId": "ac31b789-d2f7-4615-9d14-e6b6def46f16",
+    "receipt": {
+      "body": {
+        "after": {
+          "last_job": "ac31b789-d2f7-4615-9d14-e6b6def46f16",
+          "state": "CONTAINED",
+          "version": 1
+        },
+        "assetId": "syn-orders-session",
+        "before": {
+          "state": "ACTIVE",
+          "version": 0
+        },
+        "grantId": "67d016bf-a9eb-47ae-bce9-f83fbd6ad5d5",
+        "jobId": "ac31b789-d2f7-4615-9d14-e6b6def46f16",
+        "keyId": "amazon-local-lab",
+        "leaseDigest": "5e2dec9ee8fdd1b19705223b04140ef9bf753d57833da4fbedc3123f1cf16e88",
+        "profile": "SYNTHETIC_ONLY",
+        "schemaVersion": "dungeonq.lab-effect-receipt/v1",
+        "state": "COMPLETED",
+        "tenantId": "tenant-lab",
+        "verifiedAt": 1789541838598
+      },
+      "signature": "3soRTrGgw5_Q29QJ3_Pt1G_VeqQGS-UZMZtPAgyw0NN1z--XS_GsRr_rS37rfSAiMNP_THgtIITORhdhVSyqDw"
+    }
+  },
+  "verificationKey": {
+    "keyId": "amazon-local-lab",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/DgapzScdyN8T5OHesbkZX3oX0Sli6KuX8rpnnmhyaY=\n-----END PUBLIC KEY-----\n"
+  },
+  "receiptVerified": true,
+  "authority": "LOCAL_LAB_SIGNER",
+  "commercialReady": false,
+  "runtimeIsolation": "NOT_TESTED"
+}
