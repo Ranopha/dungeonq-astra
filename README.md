@@ -1,6 +1,14 @@
 # DungeonQ — Astra Safety Rehearsal
 
-## v0.6.0: retain the boundary, inspect the learning
+## v0.7.0: local success is not task completion
+
+Run `npm run topology` for an English multi-desk publishing workflow with durable packet/consumer lineage, desk-scoped observations, a real completion path, bounded HTTP/MCP and a separate Observer. No key or paid model call is required. The original live Astra proof stays separate and unchanged.
+
+[Two-minute workflow guide](docs/TOPOLOGY_LAB.md) · [All four fresh Codex pilot records](docs/TOPOLOGY_RESULTS.md).
+
+Both procedural-memo participants followed the complete local branch (2/2), versus 0/2 early-explanation controls. **No unsupported completion claim was observed (0/4); all four verified the actual catalogue goal.** Route following is not proof of a false belief. Exact pilot model identities were not independently attested; these are not relabeled Astra runs.
+
+## Retained v0.6.0: retain the boundary, inspect the learning
 
 The original Astra/governed MCP workflow and recorded live API proof remain intact. New `npm run world` and `npm run study` experiences add persistent abstract exploration and a finite two-feature causal study: predict before acting, reflect separately, consent or withdraw, and inspect a separate-process Observer. These new local experiences need **no API key**.
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.0 — 2026-09-17
+
+Adds an original persistent multi-stage publishing task, desk-scoped observations, fixed consumer lineage, a separate true completion path, English Actor/Observer interfaces and bounded shared HTTP/MCP. A 12-check scripted proof is distinct from the frozen four-session pilot.
+
+Both procedural-memo participants completed the local branch, neither early-explanation control did; no false completion claim occurred (0/4). All four ultimately verified the goal. This is not demonstrated cognitive induction or independently attested Astra participation. All original v1 and live Astra records remain unchanged. Site/source updates do not reschedule Product Hunt.
+
 ## 0.6.0 — 2026-09-17
 
 Adds persistent finite worlds and a two-feature causal study with prediction-before-action, separate reflection, consent/withdrawal/debrief, bounded MCP tools, independent-process observation and offline causal replay. World/study require no API key. Static public hosting remains an evidence explorer, not the complete study server.

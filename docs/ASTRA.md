@@ -1,5 +1,9 @@
 # Running and evaluating Astra Safety Rehearsal
 
+## v0.7.0 workflow companion
+
+The new [publishing workflow](TOPOLOGY_LAB.md) adds durable multi-stage synthetic records and an English separate-Observer interface. `npm run topology` and `npm run topology:proof` do not call Astra or any paid API. [All four fresh Codex pilot records](TOPOLOGY_RESULTS.md) show local-chain following but no unsupported completion claim. They are not independently attested Astra runs and do not replace the original live API proof below.
+
 ## v0.6.0 research companion: free and separate
 
 The Astra candidate/approval workflow below is unchanged. The distribution also includes `npm run world` and `npm run study`, which make no provider calls and require no API key. The [two-minute study route](STUDY_LAB.md#a-two-minute-reviewer-route) exercises finite two-feature prediction → action → reflection, consent, withdrawal and a separate-process Observer. The study UI is Traditional Chinese; the English guide includes its labels.

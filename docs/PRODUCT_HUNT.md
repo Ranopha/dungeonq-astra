@@ -1,5 +1,13 @@
 # Product Hunt launch materials — scheduled
 
+## v0.7.0 workflow update
+
+Keep the existing September 18, 2026 12:01 AM Pacific / 3:01 PM Taiwan launch schedule. Add the English persistent publishing workflow and linked [complete pilot record](TOPOLOGY_RESULTS.md); preserve the original Astra proof and earlier 0/2 study. The four-session workflow pilot observed local-chain following in 2/2 memo sessions versus 0/2 controls, but no unsupported completion claim (0/4). Do not label this demonstrated cognitive induction or a new live Astra run.
+
+Proposed short description: **GPT-6 Astra proposes; DungeonQ governs approval through real local MCP. Rehearse the boundary, then inspect a persistent publishing world: local successes, independent replay and all four model pilot records. Synthetic only; no production claims.**
+
+Source/site updates are separate from the launch. This document is copy, not evidence of a saved Product Hunt form. Existing launch materials below retain their historical context.
+
 ## v0.6.0 content update
 
 The confirmed launch remains **September 18, 2026, 12:01 AM Pacific / 3:01 PM Taiwan**. Source/site publication and editing a scheduled post are separate from launching it early. Product Hunt documents [editing scheduled posts](https://help.producthunt.com/en/articles/2724119-how-to-schedule-a-post). This file contains the v0.6.0 update copy; saving it here is not evidence that the form changes were saved.
