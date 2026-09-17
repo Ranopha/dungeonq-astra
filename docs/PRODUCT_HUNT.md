@@ -16,7 +16,7 @@ The description and three-topic selection were saved in the existing Product Hun
 
 The current landing page starts with the Astra proposal/authority distinction and a free browser simulation. It keeps the original Astra API record separate from newer scripted notification/defense records. The self-hosted lab has separate sign-in, state and local HTTPS/MCP; the public browser models the reviewer and has no paid model endpoint.
 
-**New film:** [73-second English MP4](https://github.com/Ranopha/dungeonq-astra/releases/download/v0.10.0/dungeonq-astra-launch-final.mp4), with [subtitles and evidence boundaries](ASTRA_LAUNCH_DEMO.md). The public GitHub media asset is available. YouTube upload and the Product Hunt video URL are pending the upload-time terms confirmation; this document does not claim that field is complete.
+**New film:** [73-second English walkthrough on YouTube](https://youtu.be/8zdXD-cAkEQ), with [subtitles and evidence boundaries](ASTRA_LAUNCH_DEMO.md). On September 17, the new video was publicly published with its English description, custom thumbnail and English subtitle track after the maker's upload-time authorization. The existing Product Hunt video field was updated to this exact URL and returned **All changes saved successfully**. The scheduled September 18 12:01 AM Pacific launch was unchanged. The MP4/SRT are also retained as public GitHub release assets; the old competition videos were not changed.
 
 ### Current maker comment copy
 
