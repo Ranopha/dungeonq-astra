@@ -16,6 +16,8 @@ The description and three-topic selection were saved in the existing Product Hun
 
 The current landing page starts with the Astra proposal/authority distinction and a free browser simulation. It keeps the original Astra API record separate from newer scripted notification/defense records. The self-hosted lab has separate sign-in, state and local HTTPS/MCP; the public browser models the reviewer and has no paid model endpoint.
 
+**New film:** [73-second English MP4](https://github.com/Ranopha/dungeonq-astra/releases/download/v0.10.0/dungeonq-astra-launch-final.mp4), with [subtitles and evidence boundaries](ASTRA_LAUNCH_DEMO.md). The public GitHub media asset is available. YouTube upload and the Product Hunt video URL are pending the upload-time terms confirmation; this document does not claim that field is complete.
+
 ### Current maker comment copy
 
 Hi Product Hunt — I'm the maker of DungeonQ.

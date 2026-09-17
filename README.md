@@ -2,6 +2,8 @@
 
 **Astra proposes. You keep authority.** Rehearse an unapproved action, simulate review, then check the result, tampering and replay.
 
+[73-second English film (MP4)](https://github.com/Ranopha/dungeonq-astra/releases/download/v0.10.0/dungeonq-astra-launch-final.mp4) · [English subtitles](media/astra-launch.en.srt) · [What the film establishes](docs/ASTRA_LAUNCH_DEMO.md)
+
 [Try the free browser simulation](https://dungeonq-astra.kq7dn7jb6r.chatgpt.site/#rehearsal) — no account, API key or paid call. The reviewer here is simulated. For the complete self-hosted synthetic lab with separate sign-in, persistent state and a local simulated mailbox, use the setup guides below. External email and provider sign-in require your own configuration; this is not production protection.
 
 [繁體中文入門／文件索引](docs/START_HERE.zh-TW.md) · [Email and identity setup](docs/EMAIL_NOTIFICATIONS.md) · [Owner walkthrough](docs/DEFENSE_LAB.md) · [OSS reviewer guide](docs/OSS_REVIEW_GUIDE.md) · [Validation and CI](docs/VALIDATION.md)

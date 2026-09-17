@@ -2,7 +2,9 @@
 
 The launch film has three separate chapters, not one continuous live incident. All systems, incidents and protected assets are synthetic. Its narration is an offline synthetic voice, not a recording of the maker.
 
-Length: **73.472 seconds**. Format: 1920 × 1080 at 30 fps. [English subtitles](../media/astra-launch.en.srt) are provided separately for accessibility and review.
+Length: **73.472 seconds** (73.5-second encoded video). Format: 1920 × 1080 at 30 fps. [Public MP4](https://github.com/Ranopha/dungeonq-astra/releases/download/v0.10.0/dungeonq-astra-launch-final.mp4) · [English subtitles](../media/astra-launch.en.srt). Narration loudness is normalized; the video frames are unchanged.
+
+The MP4 is an additional presentation asset on the v0.10.0 release, not a replacement of its original source archive or tag. SHA-256: `cbff1a6ec643981eddd04c0ba84275172ab9ce5255673b721a07ba5dc463458e`.
 
 | Chapter | Shown evidence | Limit |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "dungeonq.source-release/v1",
   "profile": "SYNTHETIC_ONLY",
-  "generatedAt": "2026-09-17T13:05:21.762Z",
+  "generatedAt": "2026-09-17T13:11:24.261Z",
   "privateHistoryIncluded": false,
   "entries": [
     {
@@ -131,8 +131,8 @@
     },
     {
       "path": "astra-site/index.html",
-      "bytes": 25805,
-      "sha256": "21096fd8c92710613fbad6adf55445b0008d4415f2e75151ca22ae413a0d7a6f"
+      "bytes": 25993,
+      "sha256": "d2f56e62d60ad698ade34b74e19c78bd4f5aa1abf4ce638f7e49186ffcf504ea"
     },
     {
       "path": "astra/index.html",
@@ -176,8 +176,8 @@
     },
     {
       "path": "docs/ASTRA_LAUNCH_DEMO.md",
-      "bytes": 2808,
-      "sha256": "afd483b759f2f51b4dbcf0c884a91e02ae6814d3fa8540f3a9daf3f092297c3a"
+      "bytes": 3169,
+      "sha256": "8892a8f823da07a667e2f6b9c3f59895d30d19945ecfc612fb01ea8f453f32f5"
     },
     {
       "path": "docs/ASTRA.md",
@@ -236,8 +236,8 @@
     },
     {
       "path": "docs/PRODUCT_HUNT.md",
-      "bytes": 13201,
-      "sha256": "e364bf9d6f1476aca48fab9fee5bcfea3c5faa68d2b506be7f22c666035e8158"
+      "bytes": 13597,
+      "sha256": "1acb5f875f6a342c40df6f47bf3e099b87632f93b43b2e6739defa3c5b63bf58"
     },
     {
       "path": "docs/SCENARIO_PACK.md",
@@ -766,13 +766,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 13769,
-      "sha256": "8274b7a4dd5971d00cc1d8781277fdccdc0b79846788cb085bb90c2c291ae81f"
+      "bytes": 14010,
+      "sha256": "e81a9579029f4e091918dda292358901fd8a5851b289d286b3c4f98a5856fe50"
     },
     {
       "path": "SBOM.cdx.json",
       "bytes": 212266,
-      "sha256": "870f8381e5953590bc028f510fd5e1e8ef40afe6fcba0d5293be18a4cbd62e47"
+      "sha256": "51e51bb354e8d90e16ad2c2e3dcb206ddfc1f6c045cc9da4704eb57925093103"
     },
     {
       "path": "scripts/amazon.mjs",
