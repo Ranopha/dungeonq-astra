@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.0 — 2026-09-17
+
+Integrates a single defensive incident: seeded persistent Dungeon, durable contact alert, separate Owner reauthentication/approval, actual loopback HTTPS resource rotation, four independent read-backs and continued Dungeon activity. Adds the English control room, local artifact scope proof, safe expiry/unknown recovery, SQLite v6 and a 13-check engineering acceptance.
+
+No paid provider call was added; original live Astra evidence and all earlier research outcomes are unchanged. This reference profile supports one fixed synthetic origin transition, not production isolation, automatic AI identification or general cognitive-deception efficacy. Source/site updates do not change the Product Hunt launch schedule.
+
 ## 0.7.0 — 2026-09-17
 
 Adds an original persistent multi-stage publishing task, desk-scoped observations, fixed consumer lineage, a separate true completion path, English Actor/Observer interfaces and bounded shared HTTP/MCP. A 12-check scripted proof is distinct from the frozen four-session pilot.

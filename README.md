@@ -1,6 +1,27 @@
 # DungeonQ — Astra Safety Rehearsal
 
-## v0.7.0: local success is not task completion
+## v0.8.0: one incident. Two worlds.
+
+The new `npm run defense` reference joins the pieces into one inspectable response: a configured honey contact starts a bounded synthetic B/C/D campaign, creates a durable alert and proposes a rotation for protected resource A. A separately signed-in Owner reviews the exact scope and digest, reauthenticates, approves, then executes. A real loopback TLS issuer checks old-key denial, new-key business success, old-consumer denial and rejection of the world-issued decoy token. The campaign continues after the rotation.
+
+The saved **13-check engineering proof** uses no provider call. It is `SCRIPTED_FIXTURE`, with an automated Owner credential, **not a new Astra run, verified human presence or evidence of LLM deception**. The September 16 live Astra proof and all earlier research results remain unchanged.
+
+[English Actor / Owner guide](docs/DEFENSE_LAB.md) · [Recorded engineering proof](evidence/defense-v1/proof.json) · [OSS review guide](docs/OSS_REVIEW_GUIDE.md).
+
+```sh
+npm ci --ignore-scripts
+npm run defense:proof -- --out ../dungeonq-defense-proof
+
+# First installation: a new, empty, private directory
+mkdir -m 700 ../dungeonq-defense-lab
+npm run defense -- --data-dir ../dungeonq-defense-lab --seed 42 --depth 4
+```
+
+Keep the printed Owner password outside the Actor/MCP client. This local profile has **one fixed synthetic A, one rotation, a 30-day worker credential and a 30-day certificate**. Restart preserves state; refreshing an expired unclaimed proposal requires new approval, while uncertain execution is reconciled without another rotation. A honey contact does not identify an AI or prove A was breached. MCP does not transparently intercept traffic, local notification receipts are not email delivery, and same-host processes do not establish production isolation.
+
+The static evidence viewer presents this as `RECORDED_ENGINEERING_PROOF`: visitors inspect saved files, not a live defense server. No new paid Astra call or public-release status is implied by the v0.8.0 source changes.
+
+## Retained v0.7.0: local success is not task completion
 
 Run `npm run topology` for an English multi-desk publishing workflow with durable packet/consumer lineage, desk-scoped observations, a real completion path, bounded HTTP/MCP and a separate Observer. No key or paid model call is required. The original live Astra proof stays separate and unchanged.
 
@@ -30,6 +51,7 @@ The incident and effects are artificial. The self-hosted transport, HTTPS authen
 
 | Experience | What runs | Model cost |
 | --- | --- | --- |
+| Self-hosted defense reference | Same-incident bounded world, local alert, separate Owner approval, actual TLS rotation and four readbacks | No provider call; no key needed |
 | Public browser rehearsal | A browser model of the workflow, plus recorded evidence from a local live run | No provider call |
 | Local checks | Deterministic engine, real local components and a mocked Astra provider | No provider call |
 | Self-hosted world / causal study | Persistent finite objects, separate-process Observer and causal replay | No provider call; no key needed |

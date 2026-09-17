@@ -10,7 +10,20 @@ const output=resolve(destination);const st=await lstat(output);if(!st.isDirector
 const sources=[['astra-site/index.html','index.html'],['astra-site/assets/site.css','assets/site.css'],['astra-site/assets/site.mjs','assets/site.mjs']];
 for(const name of ['study.mjs','study.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 for(const name of ['topology.mjs','topology.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
+for(const name of ['defense.mjs','defense.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 const studyPrefix=pkg.name==='dungeonq'?'docs/':'';
+const defenseNames=['proof.json','world.json','governance.json'];
+const defenseManifest={schemaVersion:'dungeonq.defense-static-manifest/v1',profile:'SYNTHETIC_ONLY',evidenceClass:'RECORDED_ENGINEERING_PROOF',claim:'BYTE_INTEGRITY_AND_CANONICAL_LINKS_NOT_PROVENANCE_OR_LIVE_EXECUTION',entries:[]};
+const defenseEvidence={};
+for(const name of defenseNames){const source=`${studyPrefix}evidence/defense-v1/${name}`;const data=await readFile(join(root,source));defenseEvidence[name]=JSON.parse(data);defenseManifest.entries.push({name,sha256:createHash('sha256').update(data).digest('hex')});sources.push([source,`evidence/defense-v1/${name}`]);}
+const defenseProof=defenseEvidence['proof.json'];
+if(defenseProof.schemaVersion!=='dungeonq.defense-proof/v1'||defenseProof.profile!=='SYNTHETIC_ONLY'||defenseProof.participantMode!=='SCRIPTED_FIXTURE'
+  ||defenseProof.approvalMode!=='SCRIPTED_OWNER_CREDENTIAL_NOT_HUMAN_PRESENCE_PROOF'||defenseProof.rotation?.approvalPresenceAttested!==false
+  ||defenseProof.paidProviderApiCalls!==0||defenseProof.externalTargetRequests!==0||!Array.isArray(defenseProof.checks)||defenseProof.checks.length!==13)throw Error('DEFENSE_PROOF_BOUNDARY_INVALID');
+if(digest(defenseEvidence['world.json'])!==defenseProof.evidence?.worldDigest||digest(defenseEvidence['governance.json'])!==defenseProof.evidence?.governanceDigest
+  ||digest(defenseProof.rotation.manifest)!==defenseProof.rotation.manifestDigest||defenseProof.rotation.receipt?.manifestDigest!==defenseProof.rotation.manifestDigest
+  ||defenseEvidence['world.json'].worldId!==defenseProof.worldId)throw Error('DEFENSE_PROOF_DIGEST_MISMATCH');
+sources.push([`${pkg.name==='dungeonq'?'release-study/':''}docs/DEFENSE_LAB.md`,'docs/DEFENSE_LAB.md']);
 const studyNames=['reference-proof.json','reference-matrix.json','reference-correlated.json','reference-control.json','codex-pilot-protocol.json','codex-pilot-results.json','codex-pilot-a.json','codex-pilot-b.json'];
 const studyManifest={schemaVersion:'dungeonq.study-static-manifest/v1',claim:'BYTE_INTEGRITY_ONLY_NOT_CAUSAL_REPLAY_OR_PROVENANCE_ATTESTATION',entries:[]};
 for(const name of studyNames){const source=`${studyPrefix}evidence/study-v1/${name}`;const data=await readFile(join(root,source));studyManifest.entries.push({name,sha256:createHash('sha256').update(data).digest('hex')});sources.push([source,`evidence/study-v1/${name}`]);}
@@ -31,4 +44,5 @@ for(const [source,target] of sources){const data=await readFile(join(root,source
 for(const [target,data] of prepared){await mkdir(dirname(join(output,target)),{recursive:true});await writeFile(join(output,target),data,{flag:'wx'});}
 await writeFile(join(output,'evidence/study-v1/manifest.json'),JSON.stringify(studyManifest,null,2)+'\n',{flag:'wx'});
 await writeFile(join(output,'evidence/topology-v2/manifest.json'),JSON.stringify(topologyManifest,null,2)+'\n',{flag:'wx'});
-console.log(JSON.stringify({output,files:sources.length+2,profile:'STATIC_SYNTHETIC_ONLY',paidEndpoint:false,originalProofDigestChecks:true}));
+await writeFile(join(output,'evidence/defense-v1/manifest.json'),JSON.stringify(defenseManifest,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({output,files:sources.length+3,profile:'STATIC_SYNTHETIC_ONLY',paidEndpoint:false,originalProofDigestChecks:true,defenseEvidenceClass:'RECORDED_ENGINEERING_PROOF',defenseCanonicalDigestsChecked:true}));
