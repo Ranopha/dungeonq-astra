@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.10.0 — 2026-09-17
+
+- Optional Google / GitHub identity linking with verified provider email; no automatic Owner creation. No provider credentials configured or live-provider acceptance claimed. Apple unavailable in this local profile.
+
+- Administrator-controlled verified email/login alias and durable notification outbox.
+- Local simulated mailbox and opt-in TLS SMTP; no provider credentials or live mailbox claim in public evidence.
+- Stale bindings fence queued alerts; unknown delivery is not blindly retried.
+- Retains original Astra evidence and complete positive/negative model pilots without adding cognitive-efficacy claims.
+
 ## 0.9.0 — 2026-09-17
 
 Adds opt-in Orders Workspace: persistent derived records, four closed-schema MCP tools, shared HTTP/UI projection, pinned installation presentation, English Actor desk and unchanged independent Owner authority. Preserves all prior installations and evidence.

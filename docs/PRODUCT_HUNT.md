@@ -1,5 +1,13 @@
 # Product Hunt launch materials — scheduled
 
+## Current v0.10.0 update
+
+Keep the existing September 18, 2026 12:01 AM Pacific / 3:01 PM Taiwan launch. Current description for the existing listing:
+
+GPT-6 Astra proposes; DungeonQ keeps approval separate through real local MCP. v0.10 adds administrator-bound alert email, a durable outbox and a free simulated mailbox. Optional Google/GitHub sign-in and TLS SMTP need your configuration; Apple is unavailable. Explore persistent decoy worlds, inspect all model records, and replay nine notification checks. Synthetic only: no live inbox delivery, general deception efficacy or production claim. Original Astra proof retained.
+
+The source and static evidence page do not operate a public mail or OAuth service. The full runtime is self-hosted. This local copy is not proof that Product Hunt saved it; record that separately. No schedule or contest-association change is requested.
+
 ## v0.7.0 workflow update
 
 Keep the existing September 18, 2026 12:01 AM Pacific / 3:01 PM Taiwan launch schedule. Add the English persistent publishing workflow and linked [complete pilot record](TOPOLOGY_RESULTS.md); preserve the original Astra proof and earlier 0/2 study. The four-session workflow pilot observed local-chain following in 2/2 memo sessions versus 0/2 controls, but no unsupported completion claim (0/4). Do not label this demonstrated cognitive induction or a new live Astra run.

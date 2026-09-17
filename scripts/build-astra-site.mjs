@@ -13,6 +13,15 @@ for(const name of ['study.mjs','study.css'])sources.push([`astra-site/assets/${n
 for(const name of ['topology.mjs','topology.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 for(const name of ['defense.mjs','defense.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 const studyPrefix=pkg.name==='dungeonq'?'docs/':'';
+sources.push(['astra-site/assets/email.mjs','assets/email.mjs']);
+const emailSource=`${studyPrefix}evidence/email-v1/proof.json`;
+const emailProof=JSON.parse(await readFile(join(root,emailSource),'utf8'));
+if(emailProof.schemaVersion!=='dungeonq.email-proof/v1'||emailProof.profile!=='SYNTHETIC_ONLY'||emailProof.participantMode!=='SCRIPTED_FIXTURE'
+  ||emailProof.verificationMode!=='LOCAL_EMAIL_CAPTURE'||emailProof.externalEmailSent!==false||emailProof.liveOAuthProviderUsed!==false
+  ||emailProof.inboxDeliveryProven!==false||emailProof.passed!==true||emailProof.checks?.length!==9||emailProof.checks.some(check=>check.passed!==true)
+  ||digest({subject:emailProof.message.subject,text:emailProof.message.text})!==emailProof.message.contentDigest)throw Error('EMAIL_PROOF_BOUNDARY_INVALID');
+sources.push([emailSource,'evidence/email-v1/proof.json']);
+sources.push([`${pkg.name==='dungeonq'?'release-study/':''}docs/EMAIL_NOTIFICATIONS.md`,'docs/EMAIL_NOTIFICATIONS.md']);
 sources.push(['astra-site/assets/workspace.mjs','assets/workspace.mjs']);
 sources.push(['astra-site/assets/workspace.css','assets/workspace.css']);
 const workspaceNames=['protocol.json','actor-interface.json','a-report.json','a-transcript.json','a-world.json','b-report.json','b-transcript.json','b-world.json'];

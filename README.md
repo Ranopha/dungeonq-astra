@@ -1,5 +1,15 @@
 # DungeonQ — Astra Safety Rehearsal
 
+## v0.10.0: notify the verified administrator
+
+The full self-hosted synthetic lab now binds alerts to the **administrator's verified login email**, with fresh reauthentication, single-use verification, durable delivery states and a separate Owner approval boundary. The model cannot choose a recipient or approve rotation.
+
+Optional Google / GitHub adapters link an existing Owner to the provider's verified email. They require your registered application and credentials; no live provider login is claimed by this release's offline tests. Apple stays unavailable in this loopback profile. Sign-in itself does not supply an email-sending service.
+
+`npm run defense:workspace` includes a **local simulated mailbox** for reproducible judging without credentials or paid calls. Optional explicit SMTP configuration enables real email over verified TLS; SMTP acceptance is not proof of inbox delivery. Changing from simulated to SMTP requires re-verification.
+
+[Setup and reviewer route](docs/EMAIL_NOTIFICATIONS.md) · [Recorded synthetic email proof](evidence/email-v1/proof.json). Reproduce with `npm run email:proof -- --out ../dungeonq-email-proof`. These are engineering additions, not new Astra API runs. The original Astra proof, all model pilot records and Product Hunt launch schedule remain unchanged.
+
 ## v0.9.0: consistent records, bounded conclusions
 
 New **Orders Workspace**: an English participant desk with real local snapshot → index → reconciliation writes, stable revisitable records, a four-tool MCP surface and the existing separate Owner control room. Evaluator-only labels are removed from the participant view; authentication, scope and approval controls remain. Start a **new** installation with `npm run defense:workspace`. No key or paid call is needed.
