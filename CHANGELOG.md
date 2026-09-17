@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.0 — 2026-09-17
+
+Adds opt-in Orders Workspace: persistent derived records, four closed-schema MCP tools, shared HTTP/UI projection, pinned installation presentation, English Actor desk and unchanged independent Owner authority. Preserves all prior installations and evidence.
+
+Publishes two complete bounded Codex trials (decoy answers accepted, explicit scope qualifications retained) and the prior disclosed-surface 0/3 negative pilot. Includes exact projection/replay verification. Does not claim sustained origin misbelief, provider-attested model identity, a new Astra API run or production isolation. Static viewer updates do not advance the scheduled Product Hunt launch.
+
 ## 0.8.0 — 2026-09-17
 
 Integrates a single defensive incident: seeded persistent Dungeon, durable contact alert, separate Owner reauthentication/approval, actual loopback HTTPS resource rotation, four independent read-backs and continued Dungeon activity. Adds the English control room, local artifact scope proof, safe expiry/unknown recovery, SQLite v6 and a 13-check engineering acceptance.

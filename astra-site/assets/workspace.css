@@ -1,0 +1,9 @@
+#workspace table{width:100%;min-width:560px;border-collapse:collapse;text-align:left;font-size:13px}
+#workspace caption{text-align:left;padding:16px 20px;color:var(--muted);font-size:11px}
+#workspace th,#workspace td{padding:15px 20px;border-top:1px solid var(--line)}
+#workspace th{font-size:11px;font-weight:500;color:var(--muted)}
+#workspace td{font-variant-numeric:tabular-nums}
+#workspace .boundary-note{margin:24px 0;max-width:960px}
+#workspace .actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:24px}
+#workspace-statements p{overflow-wrap:anywhere;line-height:1.9}
+@media(max-width:650px){#workspace th,#workspace td{padding:13px 15px}#workspace .actions{align-items:stretch;flex-direction:column}#workspace .mode{overflow-wrap:anywhere}}

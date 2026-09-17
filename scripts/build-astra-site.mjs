@@ -3,6 +3,7 @@ import { resolve, join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { digest } from '../server/contracts.mjs';
+import { verifyWorkspacePilot } from './lib/workspace-pilot-verifier.mjs';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const pkg=JSON.parse(await readFile(join(root,'package.json'),'utf8'));const releasePrefix=pkg.name==='dungeonq-astra'?'':'astra-release/';
 const [destination,...extra]=process.argv.slice(2);if(!destination||extra.length)throw Error('PASS_EMPTY_OUTPUT_DIRECTORY');
@@ -12,6 +13,15 @@ for(const name of ['study.mjs','study.css'])sources.push([`astra-site/assets/${n
 for(const name of ['topology.mjs','topology.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 for(const name of ['defense.mjs','defense.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 const studyPrefix=pkg.name==='dungeonq'?'docs/':'';
+sources.push(['astra-site/assets/workspace.mjs','assets/workspace.mjs']);
+sources.push(['astra-site/assets/workspace.css','assets/workspace.css']);
+const workspaceNames=['protocol.json','actor-interface.json','a-report.json','a-transcript.json','a-world.json','b-report.json','b-transcript.json','b-world.json'];
+await verifyWorkspacePilot(join(root,`${studyPrefix}evidence/workspace-pilot-v1`));
+const workspaceManifest={schemaVersion:'dungeonq.workspace-static-manifest/v1',claim:'BYTE_INTEGRITY_NOT_COGNITIVE_EFFICACY',entries:[]};
+for(const name of workspaceNames){const source=`${studyPrefix}evidence/workspace-pilot-v1/${name}`;const data=await readFile(join(root,source));workspaceManifest.entries.push({name,sha256:createHash('sha256').update(data).digest('hex')});sources.push([source,`evidence/workspace-pilot-v1/${name}`]);}
+sources.push([`${pkg.name==='dungeonq'?'release-study/':''}docs/WORKSPACE_LAB.md`,'docs/WORKSPACE_LAB.md']);
+sources.push([`${pkg.name==='dungeonq'?'release-study/':''}docs/DEFENSE_PILOT_RESULTS.md`,'docs/DEFENSE_PILOT_RESULTS.md']);
+for(const name of await readdir(join(root,`${studyPrefix}evidence/defense-pilot-v1`))) sources.push([`${studyPrefix}evidence/defense-pilot-v1/${name}`,`evidence/defense-pilot-v1/${name}`]);
 const defenseNames=['proof.json','world.json','governance.json'];
 const defenseManifest={schemaVersion:'dungeonq.defense-static-manifest/v1',profile:'SYNTHETIC_ONLY',evidenceClass:'RECORDED_ENGINEERING_PROOF',claim:'BYTE_INTEGRITY_AND_CANONICAL_LINKS_NOT_PROVENANCE_OR_LIVE_EXECUTION',entries:[]};
 const defenseEvidence={};
@@ -45,4 +55,5 @@ for(const [target,data] of prepared){await mkdir(dirname(join(output,target)),{r
 await writeFile(join(output,'evidence/study-v1/manifest.json'),JSON.stringify(studyManifest,null,2)+'\n',{flag:'wx'});
 await writeFile(join(output,'evidence/topology-v2/manifest.json'),JSON.stringify(topologyManifest,null,2)+'\n',{flag:'wx'});
 await writeFile(join(output,'evidence/defense-v1/manifest.json'),JSON.stringify(defenseManifest,null,2)+'\n',{flag:'wx'});
-console.log(JSON.stringify({output,files:sources.length+3,profile:'STATIC_SYNTHETIC_ONLY',paidEndpoint:false,originalProofDigestChecks:true,defenseEvidenceClass:'RECORDED_ENGINEERING_PROOF',defenseCanonicalDigestsChecked:true}));
+await writeFile(join(output,'evidence/workspace-pilot-v1/manifest.json'),JSON.stringify(workspaceManifest,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({output,files:sources.length+4,profile:'STATIC_SYNTHETIC_ONLY',paidEndpoint:false,originalProofDigestChecks:true,defenseEvidenceClass:'RECORDED_ENGINEERING_PROOF',defenseCanonicalDigestsChecked:true,workspaceObservationsReplayed:true}));
