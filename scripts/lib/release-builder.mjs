@@ -4,12 +4,9 @@ import { readFile, writeFile, mkdir, lstat } from 'node:fs/promises';
 import { join, resolve, relative, dirname } from 'node:path';
 import { createHash } from 'node:crypto';
 import { verifySource } from './source-manifest.mjs';
+import { hasReleaseSecret, isPublicSourcePath } from './release-paths.mjs';
 
 const exec = promisify(execFile);
-const safePath = path => path.length <= 256 && !path.includes('\\') && !path.startsWith('/')
-  && !path.split('/').some(part => !part || part === '.' || part === '..' || part === '.git' || part === 'node_modules'
-    || part === 'amazon-release' || part === 'astra-release' || part.startsWith('.env'))
-  && !/(?:local-instance\.json|\.(?:pem|sqlite(?:-wal|-shm)?))$/u.test(path);
 
 export async function prepareRelease({ root, output }) {
   root = resolve(root); output = resolve(output);
@@ -23,7 +20,7 @@ export async function prepareRelease({ root, output }) {
   if ((await git(['status', '--porcelain', '--untracked-files=all'])).trim()) throw new Error('RELEASE_CLEAN_COMMIT_REQUIRED');
   const commit = (await git(['rev-parse', 'HEAD'])).trim();
   const files = (await git(['ls-files', '-z'])).split('\0').filter(Boolean);
-  if (!files.length || files.length > 10000 || files.some(path => !safePath(path))) throw new Error('RELEASE_SOURCE_PATH_DENIED');
+  if (!files.length || files.length > 10000 || files.some(path => !isPublicSourcePath(path))) throw new Error('RELEASE_SOURCE_PATH_DENIED');
   // Validate all inputs before creating a destination. No Git history, ignored files or lab state.
   const source = [];
   for (const path of files) {
@@ -31,7 +28,7 @@ export async function prepareRelease({ root, output }) {
     const info = await lstat(join(root, path));
     if (!info.isFile() || info.isSymbolicLink() || info.size > 1048576) throw new Error('RELEASE_SOURCE_TYPE_DENIED');
     const data = await readFile(join(root, path));
-    if (/(?:-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\bgh[ps]_[A-Za-z0-9]{30,}\b|\bAKIA[0-9A-Z]{16}\b)/u.test(data.toString())) {
+    if (hasReleaseSecret(data.toString())) {
       throw new Error('RELEASE_SECRET_PATTERN_DENIED');
     }
     source.push([path, data]);

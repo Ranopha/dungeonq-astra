@@ -1,6 +1,16 @@
-# Product Hunt launch materials — draft
+# Product Hunt launch materials — scheduled
 
-Status: prepared copy for review, not a published or scheduled launch. Insert only URLs that have been published and read back. No public repository or demo address is asserted by this document.
+## v0.6.0 content update
+
+The confirmed launch remains **September 18, 2026, 12:01 AM Pacific / 3:01 PM Taiwan**. Source/site publication and editing a scheduled post are separate from launching it early. Product Hunt documents [editing scheduled posts](https://help.producthunt.com/en/articles/2724119-how-to-schedule-a-post). This file contains the v0.6.0 update copy; saving it here is not evidence that the form changes were saved.
+
+The update retains the original governed MCP flow and recorded Astra API proof. It adds a finite causal study, original results and two actual evidence-explorer captures ([overview](../media/study-evidence.png), [trace](../media/study-trace.png)), taking the proposed gallery from four to six images. The independent Observer is self-hosted; static hosting is not the full study. The original scheduling record below remains historical evidence, not a new launch or award.
+
+Status checked September 16, 2026: **Successfully Scheduled!** and **Launch status: Scheduled**. The selected launch date is September 18, 2026 at 12:01 AM Pacific (3:01 PM Taiwan). The maker selected **Yes, join the GPT-6 Astra Challenge**, completed the Astra contribution question and explicitly authorized the final confirmation. This is a scheduled launch, not an award or proof that launch day has occurred.
+
+[Launch page](https://www.producthunt.com/products/dungeonq-astra-safety-rehearsal?launch=dungeonq-astra-safety-rehearsal) · [Public rehearsal](https://dungeonq-astra.kq7dn7jb6r.chatgpt.site) · [Source release 0.5.0](https://github.com/Ranopha/dungeonq-astra/releases/tag/v0.5.0).
+
+Submitted with Ranopha Liu as solo maker, Artificial Intelligence and Developer Tools tags, open-source source link, four actual screenshots, a Q brand thumbnail, first maker comment and an OpenAI shoutout. Free project; live local API usage is billed by the provider. Optional video and investor-connection fields were left empty. No earlier competition video was used for Astra evidence.
 
 ## Listing copy
 
@@ -8,13 +18,13 @@ Status: prepared copy for review, not a published or scheduled launch. Insert on
 
 **Tagline:** Let Astra propose. Keep approval separate.
 
-**Description:** Rehearse an AI agent's next move before it acts. GPT-6 Astra proposes one command; DungeonQ checks scope, requires separate approval and verifies the receipt. Try the browser rehearsal or run the synthetic-only MCP lab locally with your own API key.
+**Description:** GPT-6 Astra proposes; DungeonQ governs approval and effects through real local MCP. Try the free rehearsal or inspect v0.6's causal study: paired conditions, replayable evidence and both Codex pilots (0/2 wrong high-confidence induction). Synthetic only.
 
 **Suggested topics:** Artificial Intelligence, Developer Tools, Open Source. Confirm available topic names in the launch form; use no more than three.
 
 **Shoutout:** OpenAI — GPT-6 Astra supplies the live command candidates in the self-hosted lab. Acknowledge use without implying sponsorship or endorsement.
 
-**Website and source:** Add the independently verified Astra demo and source-release links after publication. The earlier WebMCP and Amazon entries are separate products of the same project history; do not substitute their URLs for this edition.
+**Website and source:** The independent demo and original v0.5.0 source release are linked above; see the [source releases](https://github.com/Ranopha/dungeonq-astra/releases) for the v0.6.0 distribution. The protected earlier WebMCP entry remains unchanged. Amazon is a separate distribution with the same new world/study modules, not this site's deployment target.
 
 ## Maker comment
 
@@ -27,6 +37,8 @@ Try the browser rehearsal first: prepare a request, attempt to apply it before a
 This edition builds on DungeonQ 0.4.0. The engine, MCP adapter, reviewer controls, SQLite state and signed receipts were already there. For this challenge I added the Astra adapter, minimized context, single-command validation, a persistent local cost ledger, model/runtime evidence and an opt-in live proof.
 
 An early live call chose to wait because a traffic-routing label was ambiguous. I clarified the input rather than treating a fluent answer as authority. The following two-call proof passed its seven checks. The proof's reviewer is automated, so it explicitly records that human presence was not proven.
+
+Version 0.6.0 adds a separate question: what can local success really tell a learner about cause? In the self-hosted study, you predict, act and reflect inside a small fixed-rule world; a separate process records and replays the evidence. A transparent reference learner can become confident in the wrong feature, but both fresh Codex pilot participants avoided that outcome: 0/2. Their exact model identity was not independently attested, and they are not labeled Astra. The 48 reference conditions are not 48 people. I have kept these distinctions and the negative result visible because the evidence is more useful than a claim that the experiment fooled an LLM.
 
 Everything here is synthetic and intended for local evaluation. It is not production security software. Thanks to OpenAI for GPT-6 Astra, and to the open-source projects behind the stack.
 
@@ -43,15 +55,17 @@ Use actual captures of this edition. Keep the experience label visible and remov
 | Exact review | Target, manifest digest, one-effect limit and expiry. No password or populated credential field. |
 | Evidence | Original receipt verifies, an altered copy fails, and replay returns the same effect. State whether this is browser-modeled or self-hosted. |
 | Short walkthrough | Show the actual sequence from candidate to denial, separate review and read-back. Label recorded Astra output and automated-fixture proof accurately. |
+| Study evidence overview | Actual recorded-evidence explorer: fixed synthetic scope, 0/2 pilot outcome and self-hosted Observer boundary. |
+| Reference learner trace | Actual stepwise evidence table, including wrong → correct transfer predictions; not a live participant or general efficacy score. |
 
 Do not present the static browser rehearsal as a live paid-model call or as proof of independent authentication. A demo recording must not imply that the automated proof's reviewer was a person.
 
 ## Launch facts and preparation
 
-The [official GPT-6 Astra Challenge guide](https://www.producthunt.com/contests/gpt-6-astra-challenge), read September 16, 2026, specifies **September 18, 2026 at 12:01 AM Pacific** for launch: **3:01 PM in Taiwan** on the same date. This is a requested contest launch date, not confirmation that this draft has been scheduled.
+The [official GPT-6 Astra Challenge guide](https://www.producthunt.com/contests/gpt-6-astra-challenge), read September 16, 2026, specifies **September 18, 2026 at 12:01 AM Pacific** for launch: **3:01 PM in Taiwan** on the same date. The confirmed schedule above matches this date. Do not launch early when updating the source, site, copy or gallery.
 
 The guide describes awards for the top five launches. Community launch ranking matters; do not describe the outcome as a pure technical evaluation or promise a place. The guide does not establish that every underlying component must have been newly written by Astra, so describe the actual new contribution and existing foundation honestly.
 
-The prepared tagline stays within 60 characters and the description within 260. Before publication, confirm the form still accepts the copy, choose at most three topics, attach actual screenshots/video, add the OpenAI shoutout and maker comment, and verify every destination. Publication, scheduling and any required terms acceptance remain separate actions requiring authorization.
+The tagline stays within 60 characters; the update description is 254 characters, within both the earlier 260-character guidance and the observed 500-character edit-form limit. Preserve the existing schedule, OpenAI shoutout and maker attribution, choose at most three topics, and verify saved changes. Do not treat a local copy change or new GitHub release as a new scheduling confirmation.
 
 Invite questions and feedback. Do not ask for upvotes, exchange votes, reward voting or make any offer conditional on a vote. Keep this launch distinct from the protected earlier competition submissions.

@@ -1,8 +1,8 @@
 {
   "name": "dungeonq-astra",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": true,
-  "description": "A bounded GPT-6 Astra safety rehearsal with separate approval, real local MCP and synthetic evidence.",
+  "description": "Bounded Astra governance rehearsal and synthetic causal studies with separate authority, local MCP and replayable evidence.",
   "license": "Apache-2.0",
   "author": "DungeonQ contributors",
   "repository": {
@@ -25,6 +25,14 @@
     "node": ">=24.15.0"
   },
   "scripts": {
+    "study": "node scripts/study.mjs",
+    "study:proof": "node scripts/study-proof.mjs",
+    "study:verify": "node cli/study-verify.mjs",
+    "test:study": "node --test tests/study-*.test.mjs",
+    "world": "node scripts/world.mjs",
+    "test:world": "node --test tests/world-*.test.mjs",
+    "world:proof": "node scripts/world-proof.mjs",
+    "world:verify": "node cli/world-verify.mjs",
     "astra": "node scripts/astra.mjs",
     "test:astra": "node --test tests/astra.test.mjs",
     "astra:proof": "node scripts/astra-proof.mjs",

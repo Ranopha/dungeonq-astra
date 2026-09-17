@@ -1,5 +1,13 @@
 # Running and evaluating Astra Safety Rehearsal
 
+## v0.6.0 research companion: free and separate
+
+The Astra candidate/approval workflow below is unchanged. The distribution also includes `npm run world` and `npm run study`, which make no provider calls and require no API key. The [two-minute study route](STUDY_LAB.md#a-two-minute-reviewer-route) exercises finite two-feature prediction → action → reflection, consent, withdrawal and a separate-process Observer. The study UI is Traditional Chinese; the English guide includes its labels.
+
+[Original results](STUDY_RESULTS.md) preserve 48 reference-learner condition units—not subjects—and both planned Codex pilot sessions with 0/2 wrong-high-confidence induction. The exact pilot model identity was not independently attested. Do not present these sessions as Astra or evidence of general LLM efficacy. They are distinct from the recorded Astra API calls below.
+
+The public static evidence explorer can display retained results and traces; it does not host this server/Observer architecture. Run the source locally to test that boundary. None of these finite synthetic activities is a real exploit, attack chain or production security deployment.
+
 DungeonQ rehearses a single authorized change to an artificial asset. GPT-6 Astra contributes a candidate; the local runtime owns validation and enforcement. Nothing in this profile connects to a production asset, performs a live attack or establishes production readiness.
 
 ## Prerequisites and free checks

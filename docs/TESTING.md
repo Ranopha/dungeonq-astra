@@ -1,5 +1,9 @@
 # Verification map
 
+The v0.6.0 clean Amazon and Astra distributions each passed **214 tests, three goldens, audit, typecheck and build** locally. Each world and study proof passed 12 checks. This is clean-source evidence, not an assertion that new remote CI or a deployment has completed. Final source manifests identify the packaged contents.
+
+`npm run test:world`, `npm run test:study`, `npm run world:proof` and `npm run study:proof` cover the new finite causal modules without model API calls. The [research results](STUDY_RESULTS.md) keep those engineering checks separate from the 48-condition reference matrix and the Codex pilot's 0/2 wrong-high-confidence induction.
+
 Run `npm ci --ignore-scripts` and `npm run check` on Node 24.15+ with OpenSSL. These are free local tests; no API key is needed. `npm run test:astra` isolates Astra provider validation, fixed endpoint/schema, budget-before-I/O, no retry, error redaction, independent approval, recorded-before-command behavior and distinct wait outcomes.
 
 The inherited runtime suite covers real local HTTPS/CSRF and HTTP MCP, SQLite persistence, expiry/revocation, role/scope checks, idempotence, read-back, signed receipts and migration behavior. `npm run demo:proof` produces a fresh deterministic two-role fixture without an AI call. Browser engine goldens are checked by `npm run verify`.
