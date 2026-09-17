@@ -1,6 +1,38 @@
 # Product Hunt launch materials — scheduled
 
-## Current v0.10.0 update
+## Current launch polish — September 17, 2026
+
+**Name:** DungeonQ — Astra Safety Rehearsal
+
+**Tagline:** Let Astra propose. Keep approval separate.
+
+**Description (244 characters):**
+
+GPT-6 Astra proposes; you keep authority. Try the free browser simulation, then self-host separate sign-in, approval, simulated email alerts and verified results. A synthetic security lab with original Astra API evidence. Local evaluation only.
+
+**Saved topics:** Developer Tools, Artificial Intelligence, OpenAI Day. The OpenAI Day topic preserves the existing contest association; do not add a fourth tag.
+
+The description and three-topic selection were saved in the existing Product Hunt editor on September 17; it returned **All changes saved successfully**. The existing September 18, 2026 12:01 AM Pacific / 3:01 PM Taiwan schedule was unchanged. This is an edit, not an early launch or an award.
+
+The current landing page starts with the Astra proposal/authority distinction and a free browser simulation. It keeps the original Astra API record separate from newer scripted notification/defense records. The self-hosted lab has separate sign-in, state and local HTTPS/MCP; the public browser models the reviewer and has no paid model endpoint.
+
+### Current maker comment copy
+
+Hi Product Hunt — I'm the maker of DungeonQ.
+
+I built it to make the gap between an agent's suggestion and an authorized action visible. In the original self-hosted Astra workflow, GPT-6 Astra proposes a command from a synthetic state summary. A separate runtime validates it, and an independently authenticated reviewer approves the exact change. The model has no approval tool. The recorded two-call proof used an automated reviewer fixture; it does not prove human presence.
+
+Try the free browser simulation: attempt an unapproved action, simulate approval, then inspect the result and replay. It makes no model calls and simulates the reviewer role. Self-hosting provides actual local HTTPS/MCP, authentication and persistent state; optional Astra calls use your own API key.
+
+v0.10 adds administrator email binding, a durable alert queue and a local simulated mailbox. Observe a synthetic workspace contact, inspect the alert, then separately review and approve a protected resource's credential rotation. Four readbacks check what changed. Models cannot choose the recipient or approve rotation. External email requires your SMTP configuration and separate delivery verification.
+
+The original Astra API proof is retained. New notification and defense checks are scripted engineering evidence; they do not establish new Astra results, real intrusion detection or general deception efficacy. Everything is synthetic and intended for local evaluation.
+
+I'd welcome feedback on which evidence makes this approval boundary easiest to understand and adapt.
+
+This maker-comment copy is ready for the existing comment, not evidence that a public comment was edited or posted. Do not post duplicates or request votes.
+
+## Historical v0.10.0 update copy
 
 Keep the existing September 18, 2026 12:01 AM Pacific / 3:01 PM Taiwan launch. Current description for the existing listing:
 
@@ -28,7 +60,7 @@ Status checked September 16, 2026: **Successfully Scheduled!** and **Launch stat
 
 Submitted with Ranopha Liu as solo maker, Artificial Intelligence and Developer Tools tags, open-source source link, four actual screenshots, a Q brand thumbnail, first maker comment and an OpenAI shoutout. Free project; live local API usage is billed by the provider. Optional video and investor-connection fields were left empty. No earlier competition video was used for Astra evidence.
 
-## Listing copy
+## Historical v0.6.0 listing copy
 
 **Name:** DungeonQ — Astra Safety Rehearsal
 
@@ -42,7 +74,7 @@ Submitted with Ranopha Liu as solo maker, Artificial Intelligence and Developer 
 
 **Website and source:** The independent demo and original v0.5.0 source release are linked above; see the [source releases](https://github.com/Ranopha/dungeonq-astra/releases) for the v0.6.0 distribution. The protected earlier WebMCP entry remains unchanged. Amazon is a separate distribution with the same new world/study modules, not this site's deployment target.
 
-## Maker comment
+## Historical v0.6.0 maker comment
 
 Hi Product Hunt — I'm the maker of DungeonQ.
 
@@ -82,6 +114,6 @@ The [official GPT-6 Astra Challenge guide](https://www.producthunt.com/contests/
 
 The guide describes awards for the top five launches. Community launch ranking matters; do not describe the outcome as a pure technical evaluation or promise a place. The guide does not establish that every underlying component must have been newly written by Astra, so describe the actual new contribution and existing foundation honestly.
 
-The tagline stays within 60 characters; the update description is 254 characters, within both the earlier 260-character guidance and the observed 500-character edit-form limit. Preserve the existing schedule, OpenAI shoutout and maker attribution, choose at most three topics, and verify saved changes. Do not treat a local copy change or new GitHub release as a new scheduling confirmation.
+The tagline stays within 60 characters; the current description at the top of this document is 244 characters, within both the 260-character challenge guidance and the observed 500-character edit-form limit. Preserve the existing schedule, OpenAI shoutout and maker attribution, choose at most three topics, and verify saved changes. Do not treat a local copy change or new GitHub release as a new scheduling confirmation.
 
 Invite questions and feedback. Do not ask for upvotes, exchange votes, reward voting or make any offer conditional on a vote. Keep this launch distinct from the protected earlier competition submissions.

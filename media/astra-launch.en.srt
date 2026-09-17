@@ -1,0 +1,91 @@
+1
+00:00:00,090 --> 00:00:02,360
+An agent can suggest a change.
+
+2
+00:00:02,410 --> 00:00:04,720
+That should not mean it can authorize it.
+
+3
+00:00:04,770 --> 00:00:07,520
+Dungeon Q separates those jobs.
+
+4
+00:00:07,570 --> 00:00:12,420
+In our recorded September 16th experiment, GPT-6 Astra proposed
+
+5
+00:00:12,840 --> 00:00:14,690
+two bounded commands.
+
+6
+00:00:14,930 --> 00:00:18,120
+The runtime required independent review.
+
+7
+00:00:18,170 --> 00:00:22,561
+The original record includes seven checks and no agent approval tool.
+
+8
+00:00:22,641 --> 00:00:25,011
+Try the free browser simulation.
+
+9
+00:00:25,031 --> 00:00:27,791
+Start with an unapproved action, blocked.
+
+10
+00:00:27,881 --> 00:00:30,171
+Now simulate the separate reviewer.
+
+11
+00:00:30,201 --> 00:00:34,171
+The approved action changes only the selected synthetic session.
+
+12
+00:00:34,191 --> 00:00:35,771
+Verify the readback.
+
+13
+00:00:35,791 --> 00:00:37,741
+Alter a copy, rejected.
+
+14
+00:00:37,951 --> 00:00:41,361
+Replay, the same receipt, not a second effect.
+
+15
+00:00:41,391 --> 00:00:44,131
+This browser reviewer is simulated.
+
+16
+00:00:44,151 --> 00:00:47,265
+Self-hosting provides the authenticated boundary.
+
+17
+00:00:47,365 --> 00:00:51,675
+Version 0.10 adds administrator-bound alerts.
+
+18
+00:00:51,745 --> 00:00:54,795
+Here is its recorded local mailbox test.
+
+19
+00:00:54,855 --> 00:00:59,295
+Contact with the synthetic world creates an alert, but never approves a
+
+20
+00:00:59,255 --> 00:01:00,235
+rotation.
+
+21
+00:01:00,305 --> 00:01:05,195
+In the separate defense record, the approved rotation passes four readbacks.
+
+22
+00:01:05,265 --> 00:01:09,145
+This is a synthetic security lab, not production protection.
+
+23
+00:01:09,305 --> 00:01:13,462
+Try it in your browser or run the complete open source lab.

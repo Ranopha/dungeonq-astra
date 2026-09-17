@@ -1,0 +1,13 @@
+/* Astra launch: distinguish immediate browser rehearsal from self-hosting. */
+.intro { grid-template-columns: minmax(0, 1fr) 280px; gap: 44px; }
+.intro h1 { font-size: clamp(42px, 5.2vw, 70px); line-height: 1.05; }
+.launch-actions { align-items: center; flex-wrap: wrap; }
+.launch-actions .primary-cta { background: var(--green); color: #0b1010; padding: 13px 18px; border-radius: 4px; text-decoration: none; font-weight: 700; }
+.launch-actions a:focus-visible { outline: 3px solid var(--orange); outline-offset: 5px; }
+.launch-boundary { max-width: 650px; margin-top: 18px; font-size: 13px; line-height: 1.6; color: var(--muted); }
+.intro-note small { font-size: 12px; line-height: 1.6; }
+#rehearsal, #astra-record, #local { scroll-margin-top: 24px; }
+.launch-film { margin-top: 18px; }
+.launch-film a { color: var(--green); font-size: 14px; }
+@media (max-width: 900px) { .intro { grid-template-columns: minmax(0, 1fr) 230px; gap: 24px; } }
+@media (max-width: 650px) { .intro { display: block; } .intro h1 { font-size: clamp(36px, 9.5vw, 50px); } .launch-actions { align-items: flex-start; gap: 16px; } .launch-actions a { font-size: 14px; } }

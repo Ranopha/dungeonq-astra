@@ -1,7 +1,7 @@
 {
   "schemaVersion": "dungeonq.source-release/v1",
   "profile": "SYNTHETIC_ONLY",
-  "generatedAt": "2026-09-17T08:41:47.123Z",
+  "generatedAt": "2026-09-17T13:05:21.762Z",
   "privateHistoryIncluded": false,
   "entries": [
     {
@@ -85,6 +85,11 @@
       "sha256": "9a2a239a429719b4b4be07d6da56d9d5d4a9d9ea6766d1205bfc5fb1d2b746c1"
     },
     {
+      "path": "astra-site/assets/launch.css",
+      "bytes": 1146,
+      "sha256": "3f4483ff73bd749b79e2e503259f54ee8005a3a398f2ffef62da3258e607c9fd"
+    },
+    {
       "path": "astra-site/assets/site.css",
       "bytes": 8362,
       "sha256": "254c8411f07e494d96b3c3447537327e4b09ed35a304131731b62f4de86b5432"
@@ -126,8 +131,8 @@
     },
     {
       "path": "astra-site/index.html",
-      "bytes": 25118,
-      "sha256": "375f19c0961932cb549aff1c9c4de179ee5626254068596175a05be0bb1bee77"
+      "bytes": 25805,
+      "sha256": "21096fd8c92710613fbad6adf55445b0008d4415f2e75151ca22ae413a0d7a6f"
     },
     {
       "path": "astra/index.html",
@@ -168,6 +173,11 @@
       "path": "deploy/lab-isolation.json",
       "bytes": 3185,
       "sha256": "fc53d36a575d762bc2264593a2e103cc45dda92fd9a86694f89b7b0bf2f73140"
+    },
+    {
+      "path": "docs/ASTRA_LAUNCH_DEMO.md",
+      "bytes": 2808,
+      "sha256": "afd483b759f2f51b4dbcf0c884a91e02ae6814d3fa8540f3a9daf3f092297c3a"
     },
     {
       "path": "docs/ASTRA.md",
@@ -226,8 +236,8 @@
     },
     {
       "path": "docs/PRODUCT_HUNT.md",
-      "bytes": 10135,
-      "sha256": "5036fdc45e45a3b8b544df76b4ad2628f7c886678ec53dd9cd64a3709767297d"
+      "bytes": 13201,
+      "sha256": "e364bf9d6f1476aca48fab9fee5bcfea3c5faa68d2b506be7f22c666035e8158"
     },
     {
       "path": "docs/SCENARIO_PACK.md",
@@ -530,6 +540,11 @@
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
     },
     {
+      "path": "media/astra-launch.en.srt",
+      "bytes": 1795,
+      "sha256": "c115052a05b51c6bfa44484e5a1af87943dd88e77039aa9b9af63d7044494996"
+    },
+    {
       "path": "media/study-evidence.png",
       "bytes": 75631,
       "sha256": "7eaa37f3aa152e0560296dce94b1ba0ac9af59ffe303b7f512c0e5d9103204be"
@@ -751,13 +766,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 13226,
-      "sha256": "7ba063608f53ae1fb113dd2fa9ab1f11c94ee68ea5d3c2b3b74c0d59a4ebdccc"
+      "bytes": 13769,
+      "sha256": "8274b7a4dd5971d00cc1d8781277fdccdc0b79846788cb085bb90c2c291ae81f"
     },
     {
       "path": "SBOM.cdx.json",
       "bytes": 212266,
-      "sha256": "0dbb77ffb78d50519518c338a1bab4854e81ba4df12f21327f50ebccccf0c608"
+      "sha256": "870f8381e5953590bc028f510fd5e1e8ef40afe6fcba0d5293be18a4cbd62e47"
     },
     {
       "path": "scripts/amazon.mjs",
@@ -781,8 +796,8 @@
     },
     {
       "path": "scripts/build-astra-site.mjs",
-      "bytes": 9214,
-      "sha256": "6b7e4836d109dd4f50102da358d684a1b62ebfb1ba2e8127bc015542c79b07f1"
+      "bytes": 9310,
+      "sha256": "fb39d51d274d9a2787fc3f3d9dc9e05e59f5dac8764779883af61e700bfeb551"
     },
     {
       "path": "scripts/check-isolation.mjs",
