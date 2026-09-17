@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — documentation after 0.10.0
+
+- Add a Traditional Chinese entry point, a contributor guide and direct evidence/CI links.
+- Clarify fixed-directory restart, first-contact notification timing, optional OAuth/SMTP configuration and provider-versus-manual verification.
+- Preserve v0.10.0 artifacts and model evidence; no runtime or production-capability change.
+
 ## 0.10.0 — 2026-09-17
 
 - Optional Google / GitHub identity linking with verified provider email; no automatic Owner creation. No provider credentials configured or live-provider acceptance claimed. Apple unavailable in this local profile.

@@ -1,5 +1,9 @@
 # DungeonQ — Astra Safety Rehearsal
 
+[繁體中文入門／文件索引](docs/START_HERE.zh-TW.md) · [Email and identity setup](docs/EMAIL_NOTIFICATIONS.md) · [Owner walkthrough](docs/DEFENSE_LAB.md) · [OSS reviewer guide](docs/OSS_REVIEW_GUIDE.md) · [Validation and CI](docs/VALIDATION.md)
+
+New here? Start with the guides above. Current `main` includes documentation clarifications after v0.10.0; the original versioned release and recorded evidence are unchanged. Use a fixed private `--data-dir` when restarting the lab. The chronological sections below preserve the history and limits of each profile.
+
 ## v0.10.0: notify the verified administrator
 
 The full self-hosted synthetic lab now binds alerts to the **administrator's verified login email**, with fresh reauthentication, single-use verification, durable delivery states and a separate Owner approval boundary. The model cannot choose a recipient or approve rotation.
