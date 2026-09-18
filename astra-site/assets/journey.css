@@ -1,0 +1,68 @@
+/* A recorded path through the deception runtime, not a live activity monitor. */
+.deception-intro { grid-template-columns: minmax(0, 1.3fr) minmax(310px, 1fr); gap: 52px; padding-top: 64px; }
+.deception-intro h1 { font-size: clamp(40px, 4.8vw, 62px); line-height: 1.07; letter-spacing: -2.8px; }
+.deception-intro .lede { font-size: 17px; max-width: 590px; }
+.deception-intro .launch-boundary { max-width: 580px; }
+.route-picture { margin: 0; padding: 27px 24px 18px; border: 1px solid var(--line); background: var(--panel); }
+.route-picture figcaption { font-size: 10px; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 25px; }
+.route-entry { text-align: center; font-size: 20px; font-weight: 650; padding-bottom: 22px; border-bottom: 1px solid #506049; }
+.route-entry span { display: block; font-size: 11px; color: var(--muted); font-weight: 400; margin-top: 7px; }
+.route-branches { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; text-align: center; padding-top: 18px; }
+.route-branches > div { min-width: 0; }
+.route-label { font-size: 11px; color: var(--muted); }
+.route-arrow { display: block; font-size: 28px; line-height: 1.3; padding: 8px 0; color: var(--muted); }
+.route-branches strong { display: block; font-size: 16px; line-height: 1.4; margin-bottom: 9px; }
+.route-branches small { display: block; font-size: 11px; line-height: 1.55; color: var(--muted); }
+.route-diverted .route-label, .route-diverted .route-arrow, .route-diverted strong { color: var(--green); }
+.route-separation { margin: 24px 0 0; padding-top: 17px; border-top: 1px dashed #506049; font-size: 12px; }
+.route-caption { font-size: 10px; color: var(--muted); margin: 12px 0 0; }
+.journey { padding: 40px 0 46px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.journey-lede { color: var(--muted); max-width: 820px; font-size: 15px; }
+.journey-status { font-size: 11px; color: var(--green); margin: 20px 0; }
+.journey-status[data-state="UNAVAILABLE"] { color: var(--orange); }
+.journey-layout { display: grid; grid-template-columns: 225px minmax(0, 1fr); gap: 40px; }
+.journey-nav { display: block; margin: 0; }
+.journey-nav ol { list-style: none; padding: 0; margin: 0; }
+.journey-nav li { margin-bottom: 5px; }
+.journey-nav button { display: flex; align-items: center; gap: 17px; width: 100%; text-align: left; color: var(--muted); background: transparent; border: 0; border-left: 2px solid var(--line); border-radius: 0; padding: 16px 18px; font-size: 14px; }
+.journey-nav button span:first-child { font-size: 11px; font-weight: 400; }
+.journey-nav button[aria-current="step"] { color: var(--green); background: #141e17; border-left-color: var(--green); }
+.journey-chapter { min-width: 0; padding: 29px 32px; border: 1px solid var(--line); background: var(--panel); }
+.journey-chapter h3 { font-size: 30px; line-height: 1.18; margin-bottom: 18px; }
+.journey-step-summary { color: var(--muted); font-size: 15px; line-height: 1.7; }
+.journey-observations { margin: 26px 0; }
+.journey-observations > div { padding: 13px 0 13px 17px; border-left: 2px solid #47633d; margin-bottom: 12px; }
+.journey-observations dt { margin: 0 0 5px; font-size: 11px; }
+.journey-observations dd { font-size: 15px; line-height: 1.55; color: var(--ink); }
+.journey-sources { border-top: 1px solid var(--line); padding-top: 10px; }
+.journey-sources ul { padding-left: 17px; overflow-wrap: anywhere; font-size: 11px; }
+.journey-controls { display: flex; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid var(--line); padding-top: 22px; margin-top: 20px; }
+.journey-controls button { font-size: 11px; padding: 10px 12px; }
+.journey-controls span { color: var(--muted); font-size: 11px; white-space: nowrap; }
+.journey-foot { display: flex; justify-content: space-between; align-items: start; gap: 25px; margin: 20px 0 12px; }
+.journey-foot p { margin: 0; max-width: 760px; overflow-wrap: anywhere; }
+.journey-foot a { font-size: 11px; flex-shrink: 0; }
+.journey-scope { margin-top: 22px; }.journey-scope ul { padding-left: 19px; }
+.world-principles { padding: 48px 0; display: grid; grid-template-columns: 1fr 1.5fr; column-gap: 70px; border-bottom: 1px solid var(--line); }
+.world-principles > .eyebrow { grid-column: 1 / -1; }
+.world-principles > div p { font-size: 14px; color: var(--muted); margin-bottom: 22px; }
+.world-principles strong { display: block; color: var(--ink); font-size: 16px; margin-bottom: 6px; }
+.install-roles dt { color: var(--green); font-size: 12px; margin-top: 20px; }.install-roles dd { font-size: 14px; color: var(--muted); }
+.local .install-links { margin-top: 25px; }
+.supporting-record { padding-top: 32px; }.supporting-record h2 { margin-bottom: 18px; }
+.supporting-record > p:not(.eyebrow) { color: var(--muted); font-size: 14px; max-width: 850px; }
+.technical-record { margin: 22px 0; }.technical-record > summary { font-size: 14px; }
+.technical-record .runtime-result { border-top: 0; }
+.profile-history { padding: 48px 0; }.profile-history h2 { margin-bottom: 20px; }
+.profile-history > p:not(.eyebrow) { max-width: 820px; color: var(--muted); font-size: 14px; }
+.profile-links { display: flex; flex-wrap: wrap; justify-content: start; margin: 26px 0; gap: 14px 25px; font-size: 13px; }
+.profile-links a { color: var(--green); }
+.profile-history > .profile-results { font-size: 12px; }
+#profile-records > summary { font-size: 15px; border-top: 1px solid var(--line); margin-top: 26px; padding: 20px 0; }
+#profile-records[open] > summary { margin-bottom: 24px; }
+#profile-records > section { font-size: 15px; }
+#journey, #profiles { scroll-margin-top: 24px; }
+@media (max-width: 900px) { header { flex-wrap: wrap; } header > .tag { margin-left: auto; } header > nav { order: 3; width: 100%; justify-content: space-between; } }
+@media (max-width: 650px) { header > nav { flex-wrap: wrap; justify-content: flex-start; gap: 12px 20px; } }
+@media (max-width: 900px) { .deception-intro { gap: 28px; grid-template-columns: 1.2fr 1fr; }.deception-intro h1 { font-size: 47px; }.route-picture { padding: 24px 16px 17px; }.journey-layout { grid-template-columns: 180px minmax(0,1fr); gap: 22px; }.journey-chapter { padding: 24px; }.world-principles { gap: 0 35px; }.journey-foot { display: block; }.journey-foot a { display: inline-block; margin-top: 12px; } }
+@media (max-width: 650px) { .deception-intro { display: block; padding-top: 40px; }.deception-intro h1 { font-size: clamp(36px, 9.5vw, 48px); letter-spacing: -1.8px; }.deception-intro .lede { font-size: 16px; }.route-picture { margin-top: 34px; }.route-branches { gap: 16px; }.journey { padding-top: 34px; }.journey-layout { display: block; }.journey-nav ol { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px; margin-bottom: 18px; }.journey-nav li { margin: 0; }.journey-nav button { padding: 12px 8px; font-size: 12px; gap: 7px; }.journey-chapter { padding: 22px 17px; }.journey-chapter h3 { font-size: 26px; }.journey-observations dd { font-size: 14px; }.journey-controls { gap: 7px; }.journey-controls button { padding: 10px 9px; font-size: 10px; }.world-principles { display: block; padding: 36px 0 20px; }.world-principles h2 { margin-bottom: 28px; }.profile-links { justify-content: start; gap: 13px 22px; }.profile-history { padding-top: 36px; } }

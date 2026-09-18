@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { RUNTIME_CHECK_IDS, validateRuntimeSummary, renderRuntimeSummary, loadRuntimeSummary } from '../astra-site/assets/runtime.mjs';
+import { JOURNEY_STEPS, validateRecordedJourney, loadRecordedJourney } from '../astra-site/assets/journey.mjs';
 
 const fixture = () => ({ schemaVersion: 'dungeonq.runtime-public-summary/v1', sourceScope: 'SHARED_RUNTIME_CODE',
   source: { version: '0.11.0', runtimeDigest: 'a'.repeat(64) }, observedAt: '2026-09-18T08:00:00.000Z',
@@ -16,7 +17,8 @@ const fixture = () => ({ schemaVersion: 'dungeonq.runtime-public-summary/v1', so
   suite: { passed: 448, total: 448 }, limitations: ['Artificial origin only. No production or model-efficacy claim.'] });
 function dom() {
   const nodes = new Map();
-  function node() { return { textContent: '', dataset: {}, children: [], append(...children) { this.children.push(...children); }, replaceChildren(...children) { this.children = children; } }; }
+  function node() { return { textContent: '', dataset: {}, attributes: {}, children: [], append(...children) { this.children.push(...children); },
+    replaceChildren(...children) { this.children = children; }, setAttribute(name, value) { this.attributes[name] = value; }, focus() { this.focused = true; } }; }
   return { createElement: node, getElementById(id) { if (!nodes.has(id)) nodes.set(id, node()); return nodes.get(id); } };
 }
 
@@ -30,6 +32,43 @@ test('static runtime summary requires the complete source-bound census and keeps
     const value = fixture(); mutate(value); assert.throws(() => validateRuntimeSummary(value), /RUNTIME_SUMMARY_INVALID/);
   }
   const missing = fixture(); delete missing.isolation; assert.throws(() => validateRuntimeSummary(missing));
+});
+
+const journeyFixture = () => ({ schemaVersion: 'dungeonq.runtime-public-journey/v1', sourceScope: 'SHARED_RUNTIME_CODE',
+  evidenceClass: 'RECORDED_REFERENCE_OBSERVATIONS', source: fixture().source, observedAt: fixture().observedAt,
+  steps: JOURNEY_STEPS.map(id => ({ id, title: `Saved ${id}`, summary: `An observed ${id} result.`,
+    observations: [{ label: 'Recorded result', value: `${id}: retained` }], evidenceRefs: ['summary.json: saved reference'] })),
+  limitations: ['Owned artificial reference only. Chapters are explanatory, not execution order.'] });
+
+test('recorded journey refuses missing observations, substituted evidence classes and incomplete chapter records', () => {
+  const value = journeyFixture(); const original = structuredClone(value);
+  assert.equal(validateRecordedJourney(value), value); assert.deepEqual(value, original);
+  for (const mutate of [entry => { entry.steps[0].observations = []; }, entry => { entry.steps.pop(); },
+    entry => { entry.steps[1].id = 'route'; }, entry => { entry.steps[0].evidenceRefs = []; },
+    entry => { entry.evidenceClass = 'BROWSER_SIMULATION'; }, entry => { entry.source.runtimeDigest = 'unknown'; }]) {
+    const entry = journeyFixture(); mutate(entry); assert.throws(() => validateRecordedJourney(entry), /RECORDED_JOURNEY_INVALID/);
+  }
+});
+
+test('journey chapter navigation reads one saved record, renders inert observations and clears failed reloads', async () => {
+  const document = dom(); const value = journeyFixture(); value.steps[1].observations[0].value = '<img src=x onerror=alert(1)>';
+  let requests = 0;
+  await loadRecordedJourney(document, async (url, options) => {
+    requests += 1; assert.equal(url, 'evidence/runtime-v1/journey.json'); assert.equal(options.credentials, 'omit');
+    return { ok: true, text: async () => JSON.stringify(value) };
+  });
+  assert.equal(document.getElementById('journey-step-title').textContent, 'Saved route');
+  document.getElementById('journey-next').onclick();
+  assert.equal(document.getElementById('journey-step-title').textContent, 'Saved ticket');
+  assert.equal(document.getElementById('journey-step-title').focused, true);
+  assert.equal(document.getElementById('journey-observations').children[0].children[1].textContent, value.steps[1].observations[0].value);
+  const chapter = document.getElementById('journey-chapters').children[5].children[0]; chapter.onclick();
+  assert.equal(chapter.attributes['aria-current'], 'step'); assert.equal(document.getElementById('journey-next').disabled, true);
+  document.getElementById('journey-previous').onclick();
+  assert.equal(document.getElementById('journey-step-title').textContent, 'Saved adaptation'); assert.equal(requests, 1);
+  assert.equal(await loadRecordedJourney(document, async () => ({ ok: false })), null);
+  assert.equal(document.getElementById('journey-observations').children.length, 0);
+  assert.equal(document.getElementById('journey-next').onclick, null); assert.equal(document.getElementById('journey-next').disabled, true);
 });
 
 test('static runtime summary never promotes failed, incomplete or inconclusive evidence to PASS', () => {
@@ -58,7 +97,8 @@ test('recorded viewer renders inert text and clears a previous pass when fetchin
 test('runtime landing page preserves lab controls and separates recorded evidence from installation', async () => {
   const html = await readFile(new URL('../astra-site/index.html', import.meta.url), 'utf8');
   for (const id of ['runtime', 'runtime-status', 'runtime-facts', 'runtime-checks', 'runtime-limitations', 'rehearsal',
-    'scenario', 'approve', 'apply', 'record-verify', 'email-proof-status', 'workspace-verify', 'defense-verify', 'topology-verify', 'study-verify', 'local']) {
+    'scenario', 'approve', 'apply', 'record-verify', 'email-proof-status', 'workspace-verify', 'defense-verify', 'topology-verify', 'study-verify', 'local',
+    'journey', 'journey-chapters', 'journey-status', 'journey-step-title', 'journey-observations', 'journey-previous', 'journey-next']) {
     assert.equal((html.match(new RegExp(`id="${id}"`, 'g')) ?? []).length, 1, `unique preserved ${id}`);
   }
   assert.match(html, /NO LIVE VISITOR INTEGRATION/); assert.match(html, /not a Runtime v1 capture/);
@@ -77,6 +117,10 @@ test('actual site build includes the same public runtime summary and every local
   const pkg = JSON.parse(await readFile(join(root, 'package.json'), 'utf8'));
   const source = join(root, pkg.name === 'dungeonq' ? 'docs' : '', 'evidence/runtime-v1/summary.json');
   assert.deepEqual(await readFile(join(output, 'evidence/runtime-v1/summary.json')), await readFile(source));
+  const journeySource = join(root, pkg.name === 'dungeonq' ? 'docs' : '', 'evidence/runtime-v1/journey.json');
+  assert.deepEqual(await readFile(join(output, 'evidence/runtime-v1/journey.json')), await readFile(journeySource));
+  const journey = validateRecordedJourney(JSON.parse(await readFile(journeySource, 'utf8')));
+  assert.equal(journey.source.runtimeDigest, JSON.parse(await readFile(source, 'utf8')).source.runtimeDigest);
   const html = await readFile(join(output, 'index.html'), 'utf8');
   for (const [, path] of html.matchAll(/(?:src|href)="([^"#][^"]*)"/g)) {
     if (/^(?:https?:|data:)/.test(path)) continue;

@@ -1,13 +1,13 @@
 {
   "schemaVersion": "dungeonq.source-release/v1",
   "profile": "SYNTHETIC_ONLY",
-  "generatedAt": "2026-09-18T03:25:53.520Z",
+  "generatedAt": "2026-09-18T04:05:02.027Z",
   "privateHistoryIncluded": false,
   "entries": [
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 5358,
-      "sha256": "e8c28fd8178162075a989babaeb22a7750530aa78be3b517be3f19f93d6bb900"
+      "bytes": 5363,
+      "sha256": "1b047e2c3fc0218db72870299b68a18e66467352f2da9634df308c9d9f47f4b9"
     },
     {
       "path": ".gitignore",
@@ -85,6 +85,16 @@
       "sha256": "9a2a239a429719b4b4be07d6da56d9d5d4a9d9ea6766d1205bfc5fb1d2b746c1"
     },
     {
+      "path": "astra-site/assets/journey.css",
+      "bytes": 7308,
+      "sha256": "70d3154cf402131a1db129d9bc318de7a6243338839da7b1febe2d31a8209158"
+    },
+    {
+      "path": "astra-site/assets/journey.mjs",
+      "bytes": 6701,
+      "sha256": "3bb7a5b9e46461f21a826858b43221e883770fb31bfeb2c33c6d3f9106510011"
+    },
+    {
       "path": "astra-site/assets/launch.css",
       "bytes": 1146,
       "sha256": "3f4483ff73bd749b79e2e503259f54ee8005a3a398f2ffef62da3258e607c9fd"
@@ -141,8 +151,8 @@
     },
     {
       "path": "astra-site/index.html",
-      "bytes": 30651,
-      "sha256": "a39517a76e73356be9e7ff19bf1f2368d8577ac6ec97ab75a5fcaf83957dfe4a"
+      "bytes": 32799,
+      "sha256": "f26baa67e85720b2f3fb2d796df8df0a21e69400d02a01ef5a945128dbf8b31b"
     },
     {
       "path": "astra/index.html",
@@ -151,8 +161,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 5635,
-      "sha256": "abf12dc6ca8e408cd2212792a8c00326c49ecea3e390aec96348c4b3a52e725b"
+      "bytes": 6306,
+      "sha256": "59a7125bcbeec648aaa225856abe76ea7fc65b9d5ea4e8ebe1c2941666a2ece0"
     },
     {
       "path": "cli/run.mjs",
@@ -270,14 +280,19 @@
       "sha256": "96093539456195d4124c0d0461b8f3ff0413ad6205717af5147b271194c2733b"
     },
     {
+      "path": "docs/JUDGE_ROUTE.md",
+      "bytes": 7466,
+      "sha256": "e0ce187dbc0131ffdf4b155eded3f033f61cb648873b617f473296bfcd46d97b"
+    },
+    {
       "path": "docs/OSS_REVIEW_GUIDE.md",
-      "bytes": 6118,
-      "sha256": "0d4e2a7395791215f79d5360f46a3903bcee29c0df197bbf6a7f6022d1defcf6"
+      "bytes": 10219,
+      "sha256": "c48b55e25cafb3a87e01375372e837d3e91a6adba42d2482f894e390e3ddf075"
     },
     {
       "path": "docs/PRODUCT_HUNT.md",
-      "bytes": 16911,
-      "sha256": "de4860cd2eebdb7aaff93b9919ee604359be1bbec550370e8ac5de79b6d750c6"
+      "bytes": 17384,
+      "sha256": "0ddc55cdd57a644797eab3d04568b4e7a49fd61138e0a279486b270d2ceada00"
     },
     {
       "path": "docs/RUNTIME_ACCEPTANCE.md",
@@ -311,8 +326,8 @@
     },
     {
       "path": "docs/SUBMISSION.md",
-      "bytes": 3087,
-      "sha256": "2c4271c65911b4b79a76941448bf368bbebd55a35d47e1f40f65df51910fc702"
+      "bytes": 3592,
+      "sha256": "c54421b62d0a4b920bd7604c2327fcb7bbaddec0dd75a77df6c0f34a0c319dbc"
     },
     {
       "path": "docs/TESTING.md",
@@ -331,8 +346,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 4731,
-      "sha256": "9bad4c10c48e192a1721ebbd602e9f4ad691bfdbb058fd006d3310c68f9a99cc"
+      "bytes": 5890,
+      "sha256": "f886d7aa210818f013c40621f20bb53037a2222c33bfb6e82f0bd808cfc18d68"
     },
     {
       "path": "docs/WORKSPACE_LAB.md",
@@ -443,6 +458,11 @@
       "path": "evidence/report.json",
       "bytes": 2037,
       "sha256": "65a915873c10dc85789207146fe5c91bb29fcd3f8ee06326148aa05729dfc2fe"
+    },
+    {
+      "path": "evidence/runtime-v1/journey.json",
+      "bytes": 11708,
+      "sha256": "c7f8a616c1baa9ce0ce235592de0290d38e3baf35442d97c6a13d0fd5b846c74"
     },
     {
       "path": "evidence/runtime-v1/summary.json",
@@ -632,12 +652,12 @@
     {
       "path": "package-lock.json",
       "bytes": 183763,
-      "sha256": "5a0d2f844a9ad2e335837070357338411ab9951ae76a1e517d0537ea8b89dab1"
+      "sha256": "41e309ef372e78f1333ca3451035c4a0f1008c846e16a87378d764145aed08dc"
     },
     {
       "path": "package.json",
-      "bytes": 4157,
-      "sha256": "87b88880b69d6ea5e210d6139bf3465e410b84e84fbf7feac38c4be6c979f9b2"
+      "bytes": 4160,
+      "sha256": "f34664a8629cbdc9481066c1e432d03ef3a23ca8f6acb18112f37ebac49b0195"
     },
     {
       "path": "public/assets/app.mjs",
@@ -836,8 +856,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 20270,
-      "sha256": "88a6fd8659328bc17bd54a606a5a4f6e4a4737f2d3605ae11915e12e5244ff0f"
+      "bytes": 20352,
+      "sha256": "b77b263f3906ee8370d3db499f35a3d6e91cb0b3df17934c67e505d69e0874b8"
     },
     {
       "path": "runtime/auxiliary.mjs",
@@ -906,8 +926,8 @@
     },
     {
       "path": "SBOM.cdx.json",
-      "bytes": 224847,
-      "sha256": "a4773b48b7feb9ce5f7c1b9bf4e2c2a6a4c079d821bf7a7c85d5519a9ce293dc"
+      "bytes": 224850,
+      "sha256": "472494f8ed130685286169cf5d40bd24b58a068fa75ac1c871491235f2e0109b"
     },
     {
       "path": "scripts/amazon.mjs",
@@ -931,8 +951,8 @@
     },
     {
       "path": "scripts/build-astra-site.mjs",
-      "bytes": 9822,
-      "sha256": "176e3574369aa907d78c55cf3d18d87e92e6abaf3bfeb741097dee44cb80804a"
+      "bytes": 10357,
+      "sha256": "6de80fd1a627d7adb1c000a25884a39a81fd4f9ba8e01edae0eba272d3b325b4"
     },
     {
       "path": "scripts/check-isolation.mjs",
@@ -976,8 +996,8 @@
     },
     {
       "path": "scripts/lib/distribution-export.mjs",
-      "bytes": 8177,
-      "sha256": "ffde63cd682e7a28636203ad4276470816e3a27d0ec176dfeab60e5244cc0f9e"
+      "bytes": 8214,
+      "sha256": "b1e77e43cdbfe5e9d61bc557b9f8999ab77254bc860bc62c583e2c5a4278996d"
     },
     {
       "path": "scripts/lib/doctor.mjs",
@@ -1376,8 +1396,8 @@
     },
     {
       "path": "tests/astra-site-runtime.test.mjs",
-      "bytes": 6435,
-      "sha256": "4b22a88d7a022cfd6b91cb9a3447c4cd5d1e69a4cd16c632d5a04a7f18ce7691"
+      "bytes": 10256,
+      "sha256": "5725d75e17618007bdb457f50d9f92233db5f1961c0b785425ed61f4fd587b9d"
     },
     {
       "path": "tests/astra.test.mjs",
@@ -1481,8 +1501,8 @@
     },
     {
       "path": "tests/release-packaging.test.mjs",
-      "bytes": 14519,
-      "sha256": "8a63a3500c929204a604dd449f78d49b931481fcb3b94fc76075e07907cbb6aa"
+      "bytes": 14537,
+      "sha256": "e372e2a1c987afcae4809434240769f28ae31d6ce63ea1e15a8809e427b62f90"
     },
     {
       "path": "tests/response-governance.test.mjs",

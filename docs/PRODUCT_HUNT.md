@@ -1,36 +1,36 @@
-# Product Hunt — prepared v0.11 runtime update
+# Product Hunt — prepared positioning update
 
 ## Listing copy
 
-**Name:** DungeonQ — Astra Safety Rehearsal
+**Name:** DungeonQ — Deception Runtime
 
-**Tagline:** Persistent worlds. Separate authority. Inspectable proof.
+**Tagline:** Divert suspicious sessions into persistent decoy worlds
 
-**Description:** DungeonQ turns agent-security rehearsal into a persistent runtime: five real local adapters, scoped synthetic tickets, operator-approved adaptation and independent origin evidence. Explore recorded checks or install it. Original Astra proof retained.
+**Description:** DungeonQ diverts designated suspicious sessions into persistent synthetic worlds. Human and AI clients use world-only tickets; operators observe and approve bounded adaptation. Inspect recorded runtime checks and the original Astra experiment.
 
-Keep the existing listing identity, maker attribution, OpenAI shoutout, contest association and launch timing. The last saved topics were Developer Tools, Artificial Intelligence and OpenAI Day. This file is prepared copy, not a current readback of launch status or a saved external edit. Do not infer today's status from the dated records below.
+Tagline: **55/60 characters**. Description: **243/260 characters**. Update the display name on the existing listing; retain its maker attribution, OpenAI shoutout and GPT-6 Astra Challenge association. Astra Safety Rehearsal remains the historical profile name. This copy does not request a new listing or a launch-time change.
 
 ## Maker comment
 
 Hi Product Hunt — I'm the maker of DungeonQ.
 
-The original Astra rehearsal made one boundary visible: a model can propose a change without being allowed to approve it. That recorded Astra experiment is still here, including its automated reviewer and evidence limits.
+DungeonQ is a defensive deception runtime. Its job is to route a designated suspicious session into a persistent synthetic world, let the participant continue useful work there, and give the operator an inspectable record of what happened. It is built for security teams and developers working with human or AI clients.
 
-v0.11 adds a persistent runtime behind the idea. HTTP, MCP, bounded SSH and PostgreSQL profiles, and a private workload broker reach the same synthetic world. A Wrong Ticket is useful there, but grants no authority over the independent artificial origin. State, ticket use and observations survive restart. A separate operator previews and approves bounded adaptation or fences a context.
+The sequence is concrete: enter through a real adapter, read or change a world record, receive a useful world-only Wrong Ticket, and return to the same state after restart. A separately approved finite policy can add follow-up records in response to observed activity. Independent artificial-origin checks measure where the session's authority stopped.
 
-Start with the dated evidence summary, then install the runtime to inspect the real flow. The static site also keeps the free browser rehearsal; its reviewer is simulated and it makes no model calls. The original 73-second film shows that earlier approval flow, not the new runtime.
+The current reference shares one core across HTTP, MCP, bounded SSH/PostgreSQL and a private Unix workload broker. Its contexts are explicitly provisioned; automatic attack classification and production host integration remain future acceptance work. Start with the six recorded checkpoints, then self-host the same runtime to operate it. The public page presents evidence, not a hosted security service.
 
-The new record covers real local clients, persistent state and measured container network/file separation. It is engineering evidence for artificial resources, not a new Astra experiment, production protection or proof that an AI will be deceived. Earlier negative study outcomes remain visible. Optional live Astra use needs your own API account and spending decision.
+GPT-6 Astra contributed the original bounded assistant profile: it proposes a command from minimized synthetic context, while DungeonQ validates the candidate and keeps approval separate. That experiment, its automated-reviewer limitation and all original records remain available. The new runtime checks are engineering evidence, not a new live Astra experiment or a claim that an AI was fooled. The earlier 73-second film is retained and clearly scoped.
 
-I'd welcome feedback on the evaluator path: can you follow a request from its authority to the observed effect, and see exactly where the evidence stops?
+I'd welcome feedback on the diversion itself: can you follow the participant's useful work, the operator's observations and the independent origin checks, and identify what you would need to integrate this into an authorized environment?
 
 ## Evidence links and publication boundary
 
-- [Runtime operation](RUNTIME.md), [acceptance and remaining gates](RUNTIME_ACCEPTANCE.md), [sanitized source-bound summary](../evidence/runtime-v1/summary.json).
-- [Original Astra experiment](ASTRA.md) and [historical film scope](ASTRA_LAUNCH_DEMO.md).
+- [Recorded diversion and runnable evaluator route](JUDGE_ROUTE.md), [acceptance](RUNTIME_ACCEPTANCE.md), [source-bound summary](../evidence/runtime-v1/summary.json).
+- [Original Astra experiment](ASTRA.md), [historical film scope](ASTRA_LAUNCH_DEMO.md), [complete submission copy](SUBMISSION.md).
 - [Public site](https://dungeonq-astra.kq7dn7jb6r.chatgpt.site) and [source](https://github.com/Ranopha/dungeonq-astra).
 
-Apply this to the existing mutable entry and comment only after checking their current state. Saving source or publishing a website is not evidence of a saved Product Hunt edit. Preserve historical videos and the frozen WebMCP surfaces. Do not request votes or post duplicate comments.
+Apply the text to the existing mutable listing and existing comment after reading their current state. Record the saved result separately. The last recorded topics were Developer Tools, Artificial Intelligence and OpenAI Day; preserve valid existing attribution and association. Do not post duplicate comments or request votes. Earlier WebMCP source, site, submission and evidence remain frozen.
 
 <details>
 <summary>Dated launch history and earlier copy</summary>

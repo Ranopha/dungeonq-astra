@@ -1,8 +1,8 @@
 {
   "name": "dungeonq-astra",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "private": true,
-  "description": "Persistent synthetic deception runtime and Astra governance rehearsal with separate authority, bounded protocol adapters and replayable evidence.",
+  "description": "A defensive deception runtime: divert designated sessions into persistent synthetic worlds, with bounded adaptation and inspectable origin evidence.",
   "license": "Apache-2.0",
   "author": "DungeonQ contributors",
   "repository": {

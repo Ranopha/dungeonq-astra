@@ -1,23 +1,35 @@
-# Astra submission — v0.11 runtime update
+# Astra submission — defensive deception runtime
 
 ## Prepared listing copy
 
-**Name:** DungeonQ — Astra Safety Rehearsal
+**Name:** DungeonQ — Deception Runtime
 
-**Tagline:** Persistent worlds. Separate authority. Inspectable proof.
+**Tagline:** Divert suspicious sessions into persistent decoy worlds
 
-**Description:** DungeonQ turns agent-security rehearsal into a persistent runtime: five real local adapters, scoped synthetic tickets, operator-approved adaptation and independent origin evidence. Explore recorded checks or install it. Original Astra proof retained.
+**Description:** DungeonQ diverts designated suspicious sessions into persistent synthetic worlds. Human and AI clients use world-only tickets; operators observe and approve bounded adaptation. Inspect recorded runtime checks and the original Astra experiment.
 
-**What is new:** One governed runtime now serves HTTP, MCP, bounded SSH/PostgreSQL profiles and a private workload broker. A useful Wrong Ticket grants only a bounded read inside its synthetic world. State, ticket consumption and observations survive restart. An operator previews and explicitly applies a finite mutation grant or a fence; models and imported text cannot authorize themselves. A measured container profile checks network/file separation and retained evidence after restart.
+## What DungeonQ does
 
-**How Astra contributes:** The original Astra profile uses GPT-6 Astra to propose a single command from minimized synthetic context. The runtime validates it; approval stays in a separate reviewer surface. The original September 16 two-call experiment and automated-reviewer limitation are retained. The v0.11 runtime acceptance adds no paid Astra call or new model-efficacy result. Existing foundations and later runtime work are distinguished in the source history.
+DungeonQ is one defensive deception runtime for human- and AI-driven suspicious sessions. A designated ingress sends a provisioned DIVERT context into a persistent synthetic world. World records, ticket use and observations survive restart. A useful Wrong Ticket grants a bounded world-only read; independent artificial-origin checks establish the measured boundary.
 
-**Evaluator path:** Inspect [recorded runtime acceptance](RUNTIME_ACCEPTANCE.md) and the [public summary](../evidence/runtime-v1/summary.json), then install with `npm ci --ignore-scripts` and `npm run runtime`. Follow [the operator/client route](RUNTIME.md) and [container guide](../deploy/runtime-reference/README.md). The static website remains a recorded-evidence viewer and browser simulation, not a hosted runtime or paid model endpoint.
+Operators can authorize finite observation-linked adaptation or fence a context. The same canonical state serves real HTTP, MCP, bounded SSH/PostgreSQL and private Unix-broker clients. Trusted setup provisions context disposition; the reference does not automatically classify arbitrary attacks or transparently intercept an OS.
 
-**Limits:** Owned artificial resources only. Context disposition is explicitly provisioned, not detected by a general attack classifier. The container claim excludes a compromised Docker administrator, shared kernel or trusted gateway. A passing reference does not establish production readiness, general deception efficacy, remote PR protection or human presence. All historical negative pilot outcomes remain accessible.
+## How Astra contributes
 
-## Media and external status
+The original Astra profile uses GPT-6 Astra to propose one command from minimized synthetic context. DungeonQ validates the candidate; review stays in a separate surface. The Astra adapter, single-command validation, persistent cost ledger and original September 16 two-call experiment remain visible beside the existing foundations. The reviewer in that proof was automated.
 
-The [73-second film](https://youtu.be/8zdXD-cAkEQ) records the earlier approval flow, **not Runtime v1**. Preserve the original video and its [scope](ASTRA_LAUNCH_DEMO.md). The original live Astra record is separate from new scripted engineering checks.
+Astra is a bounded client profile of the product, not the authority that approves policy. Runtime acceptance adds no paid Astra call and no new model-efficacy result. All original model records and negative pilots remain intact.
 
-[PRODUCT_HUNT.md](PRODUCT_HUNT.md) contains the concise description and maker comment plus dated launch history. This prepared file does not establish that the external listing was saved, launched or accepted. Verify actual public source/site links and current form state when applying the update. Preserve the existing listing identity, contest association, maker attribution and launch timing; never create a duplicate to apply this copy. The earlier WebMCP repository, site, submission and evidence are frozen.
+## Evaluator path
+
+Follow [the recorded diversion and runnable evaluator route](JUDGE_ROUTE.md), then inspect [runtime acceptance](RUNTIME_ACCEPTANCE.md). For a private instance, run `npm ci --ignore-scripts` and `npm run runtime`; the guide supplies the existing participant CLI and operator workflow. Use the [container guide](../deploy/runtime-reference/README.md) for fresh network/file isolation checks.
+
+The September 18 **v0.11.0 Astra** distribution passed **465/465 tests** and [public Ubuntu/macOS/runtime CI](https://github.com/Ranopha/dungeonq-astra/actions/runs/35303213740), with 11/11 required runtime rows and 16/16 container checks. [VALIDATION.md](VALIDATION.md) binds those dated results to their source. A presentation edit does not create a new validation result.
+
+## Scope and media
+
+The current runtime uses owned artificial resources. Its engineering checks do not establish production protection, general deception efficacy or human presence. Container measurements retain a trusted gateway, Docker administrator and shared-kernel boundary. Prior negative and qualified results remain accessible through the evaluator guide.
+
+The [73-second film](https://youtu.be/8zdXD-cAkEQ) records the earlier approval workflow, **not Runtime v1**; preserve its [scope and original files](ASTRA_LAUNCH_DEMO.md). The public website presents recorded evidence and the earlier browser simulation. Self-hosting operates the actual runtime.
+
+[PRODUCT_HUNT.md](PRODUCT_HUNT.md) contains the maker comment and dated launch history. Update the existing entry's display name without changing its identity, maker attribution, challenge association or launch timing. Saving this file does not save an external form or establish launch status. Keep the original WebMCP surfaces frozen.
