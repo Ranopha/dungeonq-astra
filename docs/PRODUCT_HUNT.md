@@ -1,6 +1,43 @@
-# Product Hunt launch materials — scheduled
+# Product Hunt — prepared v0.11 runtime update
 
-## Current launch polish — September 17, 2026
+## Listing copy
+
+**Name:** DungeonQ — Astra Safety Rehearsal
+
+**Tagline:** Persistent worlds. Separate authority. Inspectable proof.
+
+**Description:** DungeonQ turns agent-security rehearsal into a persistent runtime: five real local adapters, scoped synthetic tickets, operator-approved adaptation and independent origin evidence. Explore recorded checks or install it. Original Astra proof retained.
+
+Keep the existing listing identity, maker attribution, OpenAI shoutout, contest association and launch timing. The last saved topics were Developer Tools, Artificial Intelligence and OpenAI Day. This file is prepared copy, not a current readback of launch status or a saved external edit. Do not infer today's status from the dated records below.
+
+## Maker comment
+
+Hi Product Hunt — I'm the maker of DungeonQ.
+
+The original Astra rehearsal made one boundary visible: a model can propose a change without being allowed to approve it. That recorded Astra experiment is still here, including its automated reviewer and evidence limits.
+
+v0.11 adds a persistent runtime behind the idea. HTTP, MCP, bounded SSH and PostgreSQL profiles, and a private workload broker reach the same synthetic world. A Wrong Ticket is useful there, but grants no authority over the independent artificial origin. State, ticket use and observations survive restart. A separate operator previews and approves bounded adaptation or fences a context.
+
+Start with the dated evidence summary, then install the runtime to inspect the real flow. The static site also keeps the free browser rehearsal; its reviewer is simulated and it makes no model calls. The original 73-second film shows that earlier approval flow, not the new runtime.
+
+The new record covers real local clients, persistent state and measured container network/file separation. It is engineering evidence for artificial resources, not a new Astra experiment, production protection or proof that an AI will be deceived. Earlier negative study outcomes remain visible. Optional live Astra use needs your own API account and spending decision.
+
+I'd welcome feedback on the evaluator path: can you follow a request from its authority to the observed effect, and see exactly where the evidence stops?
+
+## Evidence links and publication boundary
+
+- [Runtime operation](RUNTIME.md), [acceptance and remaining gates](RUNTIME_ACCEPTANCE.md), [sanitized source-bound summary](../evidence/runtime-v1/summary.json).
+- [Original Astra experiment](ASTRA.md) and [historical film scope](ASTRA_LAUNCH_DEMO.md).
+- [Public site](https://dungeonq-astra.kq7dn7jb6r.chatgpt.site) and [source](https://github.com/Ranopha/dungeonq-astra).
+
+Apply this to the existing mutable entry and comment only after checking their current state. Saving source or publishing a website is not evidence of a saved Product Hunt edit. Preserve historical videos and the frozen WebMCP surfaces. Do not request votes or post duplicate comments.
+
+<details>
+<summary>Dated launch history and earlier copy</summary>
+
+# Historical launch preparation and saved-state records
+
+## Saved v0.10 launch polish — September 17, 2026
 
 **Name:** DungeonQ — Astra Safety Rehearsal
 
@@ -119,3 +156,5 @@ The guide describes awards for the top five launches. Community launch ranking m
 The tagline stays within 60 characters; the current description at the top of this document is 244 characters, within both the 260-character challenge guidance and the observed 500-character edit-form limit. Preserve the existing schedule, OpenAI shoutout and maker attribution, choose at most three topics, and verify saved changes. Do not treat a local copy change or new GitHub release as a new scheduling confirmation.
 
 Invite questions and feedback. Do not ask for upvotes, exchange votes, reward voting or make any offer conditional on a vote. Keep this launch distinct from the protected earlier competition submissions.
+
+</details>

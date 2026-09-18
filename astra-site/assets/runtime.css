@@ -1,0 +1,27 @@
+/* The runtime record is a dated evidence ledger, never a simulated live console. */
+.runtime-record { padding: 20px 0 48px; border-bottom: 1px solid var(--line); }
+.runtime-record .lede { max-width: 830px; }
+.runtime-flow { padding: 0; margin: 34px 0; list-style: none; display: flex; flex-wrap: wrap; gap: 24px; }
+.runtime-flow li { flex: 1 1 180px; border-top: 2px solid var(--line); padding-top: 14px; }
+.runtime-flow span { display: block; font-size: 10px; letter-spacing: 1px; color: var(--green); margin-bottom: 9px; }
+.runtime-flow strong { display: block; font-size: 17px; margin-bottom: 10px; }
+.runtime-flow p { color: var(--muted); font-size: 13px; }
+.runtime-result { padding: 26px 0 12px; border-top: 1px solid var(--line); }
+.runtime-result h3 { color: var(--green); margin-bottom: 10px; font-size: 26px; }
+.runtime-result h3[data-state="FAIL"] { color: var(--red); }
+.runtime-result h3[data-state="INCONCLUSIVE"] { color: var(--orange); }
+#runtime-observed { color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+.runtime-facts { margin: 24px 0; }
+.runtime-facts > div { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 20px; border-bottom: 1px solid var(--line); padding: 12px 0; }
+.runtime-facts dt { margin: 0; }.runtime-facts dd { font-size: 13px; }
+.runtime-checks, .runtime-limitations { padding-left: 20px; font-size: 12px; color: var(--muted); }
+.runtime-checks li, .runtime-limitations li { margin-bottom: 7px; }
+.runtime-record > .boundary-note { margin-top: 22px; }
+.runtime-evaluate { padding: 42px 0 46px; }
+.runtime-evaluate h2 { margin-bottom: 24px; }
+.runtime-evaluate ol { margin: 0 0 24px; padding-left: 22px; max-width: 860px; }
+.runtime-evaluate li { padding: 0 0 15px 9px; color: var(--muted); font-size: 14px; }
+.runtime-evaluate strong { color: var(--ink); }
+.launch-film small { color: var(--muted); font-size: 11px; }
+#runtime { scroll-margin-top: 24px; }
+@media (max-width: 650px) { .runtime-flow { gap: 12px 22px; }.runtime-flow li { flex-basis: 140px; }.runtime-facts > div { grid-template-columns: 1fr; gap: 4px; }.runtime-result h3 { font-size: 23px; }.runtime-record .study-links { gap: 14px; } }

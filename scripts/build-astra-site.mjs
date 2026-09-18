@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { digest } from '../server/contracts.mjs';
 import { verifyWorkspacePilot } from './lib/workspace-pilot-verifier.mjs';
+import { validateRuntimeSummary } from '../astra-site/assets/runtime.mjs';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const pkg=JSON.parse(await readFile(join(root,'package.json'),'utf8'));const releasePrefix=pkg.name==='dungeonq-astra'?'':'astra-release/';
 const [destination,...extra]=process.argv.slice(2);if(!destination||extra.length)throw Error('PASS_EMPTY_OUTPUT_DIRECTORY');
@@ -14,6 +15,10 @@ for(const name of ['study.mjs','study.css'])sources.push([`astra-site/assets/${n
 for(const name of ['topology.mjs','topology.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 for(const name of ['defense.mjs','defense.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 const studyPrefix=pkg.name==='dungeonq'?'docs/':'';
+for(const name of ['runtime.mjs','runtime.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
+const runtimeSource=`${studyPrefix}evidence/runtime-v1/summary.json`;
+validateRuntimeSummary(JSON.parse(await readFile(join(root,runtimeSource),'utf8')));
+sources.push([runtimeSource,'evidence/runtime-v1/summary.json']);
 sources.push(['astra-site/assets/email.mjs','assets/email.mjs']);
 const emailSource=`${studyPrefix}evidence/email-v1/proof.json`;
 const emailProof=JSON.parse(await readFile(join(root,emailSource),'utf8'));
@@ -66,4 +71,4 @@ await writeFile(join(output,'evidence/study-v1/manifest.json'),JSON.stringify(st
 await writeFile(join(output,'evidence/topology-v2/manifest.json'),JSON.stringify(topologyManifest,null,2)+'\n',{flag:'wx'});
 await writeFile(join(output,'evidence/defense-v1/manifest.json'),JSON.stringify(defenseManifest,null,2)+'\n',{flag:'wx'});
 await writeFile(join(output,'evidence/workspace-pilot-v1/manifest.json'),JSON.stringify(workspaceManifest,null,2)+'\n',{flag:'wx'});
-console.log(JSON.stringify({output,files:sources.length+4,profile:'STATIC_SYNTHETIC_ONLY',paidEndpoint:false,originalProofDigestChecks:true,defenseEvidenceClass:'RECORDED_ENGINEERING_PROOF',defenseCanonicalDigestsChecked:true,workspaceObservationsReplayed:true}));
+console.log(JSON.stringify({output,files:sources.length+4,profile:'STATIC_SYNTHETIC_ONLY',paidEndpoint:false,runtimeEvidenceClass:'RECORDED_REFERENCE_ACCEPTANCE',runtimeSummaryValidated:true,liveRuntimeHosted:false,originalProofDigestChecks:true,defenseEvidenceClass:'RECORDED_ENGINEERING_PROOF',defenseCanonicalDigestsChecked:true,workspaceObservationsReplayed:true}));
