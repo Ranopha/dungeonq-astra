@@ -1,6 +1,10 @@
 # Astra submission — defensive deception runtime
 
-## Prepared listing copy
+## Current product update — September 29, 2026
+
+v0.12.0 adds separate English participant/operator working views, multiline review notes, authenticated refusals and a ten-checkpoint real MCP/HTTP walkthrough. Start with [the manual task](RUNTIME.md#try-a-complete-participant-task-v0120) or [automated reproduction](AMAZON_JUDGE_DEMO.md). This is a later product update. It does not rewrite the September 18 Astra challenge submission, original model experiment, film or judging snapshot.
+
+## Preserved listing copy
 
 **Name:** DungeonQ — Deception Runtime
 

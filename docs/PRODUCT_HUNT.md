@@ -1,3 +1,7 @@
+# September 29 product update
+
+Current source v0.12.0 adds an operable participant review task and clearer operator evidence, authenticated no-new-effect refusals and ten deterministic MCP/HTTP checkpoints. The public site points to installation and explicitly dated evidence. No new Astra experiment, challenge re-entry or retrospective judging update is claimed. The original listing/comment history below is retained; routine forum publication follows its separate schedule and daily duplicate check.
+
 # Product Hunt — prepared positioning update
 
 ## Listing copy

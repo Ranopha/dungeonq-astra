@@ -1,8 +1,22 @@
+# Start with one AI-agent workflow
+
+**v0.12.0 hands-on route:** [Open the participant and operator working views](RUNTIME.md#try-a-complete-participant-task-v0120). The participant completes a shipping review in a persistent world; the operator inspects records, observations, route evidence and finite adaptation. Both use the actual HTTP runtime. No model key is needed for this manual fixture.
+
+**Automated judge route:** [Reproduce ten real MCP/HTTP checkpoints](AMAZON_JUDGE_DEMO.md), including positive origin reachability, refusal, scoped ticket denial and restart. This is engineering evidence with deterministic clients. For a model study, use a separately specified participant brief and control; the manual page discloses its artificial nature.
+
+The remaining guide retains the earlier recorded tour and protocol-level operations. Dates and source scopes remain explicit.
+
 # Follow the diversion
 
 DungeonQ is a defensive deception runtime for security teams building controlled responses to suspicious human or AI sessions. A designated entry point diverts an admitted session into a persistent synthetic world. The participant can do useful work there; the operator can observe it and authorize bounded changes while checking the separate protected origin.
 
 The current reference uses explicitly provisioned contexts and an artificial origin. It demonstrates the routing and state mechanisms with real clients, without claiming an automatic attack detector or protection of a production host.
+
+
+## One-command companion for Amazon judges
+
+For a short first pass, run `node scripts/judge-demo.mjs /absolute/path/new-report.json` after dependency installation. It demonstrates real MCP/HTTP operations, persistent records, world-only ticket use, a separate scripted owner grant, restart and independent artificial-origin readbacks. It needs no API key and stops its own temporary reference. [Exact scope and reproduction](AMAZON_JUDGE_DEMO.md). This is a reproducible walkthrough, not a substitute for full container acceptance or independent human review.
+
 
 ## First: inspect six recorded checkpoints
 

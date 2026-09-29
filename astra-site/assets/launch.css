@@ -11,3 +11,5 @@
 .launch-film a { color: var(--green); font-size: 14px; }
 @media (max-width: 900px) { .intro { grid-template-columns: minmax(0, 1fr) 230px; gap: 24px; } }
 @media (max-width: 650px) { .intro { display: block; } .intro h1 { font-size: clamp(36px, 9.5vw, 50px); } .launch-actions { align-items: flex-start; gap: 16px; } .launch-actions a { font-size: 14px; } }
+
+.working-view{margin:0 0 1.5rem}.working-view img{display:block;width:100%;height:auto;border:1px solid #394239}.working-view figcaption{font-size:.875rem;margin-top:.5rem;color:var(--muted,#adb9ad)}

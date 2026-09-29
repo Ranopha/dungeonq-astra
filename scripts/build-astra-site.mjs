@@ -12,6 +12,7 @@ const [destination,...extra]=process.argv.slice(2);if(!destination||extra.length
 const output=resolve(destination);const st=await lstat(output);if(!st.isDirectory()||st.isSymbolicLink()||(await readdir(output)).length)throw Error('OUTPUT_MUST_BE_EMPTY');
 const sources=[['astra-site/index.html','index.html'],['astra-site/assets/site.css','assets/site.css'],['astra-site/assets/site.mjs','assets/site.mjs']];
 sources.push(['astra-site/assets/launch.css','assets/launch.css']);
+for (const name of ['participant-012.png','operator-012.png']) sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 for(const name of ['study.mjs','study.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 for(const name of ['topology.mjs','topology.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
 for(const name of ['defense.mjs','defense.css'])sources.push([`astra-site/assets/${name}`,`assets/${name}`]);
