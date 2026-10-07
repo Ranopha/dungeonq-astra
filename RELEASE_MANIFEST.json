@@ -1,13 +1,13 @@
 {
   "schemaVersion": "dungeonq.source-release/v1",
   "profile": "SYNTHETIC_ONLY",
-  "generatedAt": "2026-10-07T09:18:15.453Z",
+  "generatedAt": "2026-10-07T13:33:31.481Z",
   "privateHistoryIncluded": false,
   "entries": [
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 6076,
-      "sha256": "34134347d7e4c19b6e6ccfefcf8bdc9387eeb0acae03ec6ad6d2aecab9b66c2e"
+      "bytes": 6326,
+      "sha256": "db85ff7d5e2865e768de8005f355b9e704bb792e0b68be4c5bbc952a3decf175"
     },
     {
       "path": ".gitignore",
@@ -18,21 +18,6 @@
       "path": "AGENTS.md",
       "bytes": 1151,
       "sha256": "728203c141017450005e2027c2650f8c2beefbd7efd29a13f4b640d44268aa9f"
-    },
-    {
-      "path": "app/globals.css",
-      "bytes": 71,
-      "sha256": "2330a5455fb053f57c9bd56770cf44f8fa1bfab077a00e877822af31e28a7bd8"
-    },
-    {
-      "path": "app/layout.tsx",
-      "bytes": 857,
-      "sha256": "09d3aeec9b9612363949a375f2d6785147f197a17e1cc1ca272208288daa8b11"
-    },
-    {
-      "path": "app/page.tsx",
-      "bytes": 107,
-      "sha256": "84043f08f7179b90cb3795fab69da64c866a569964ce377bd7c1b24fcb04a9fc"
     },
     {
       "path": "ASSET_PROVENANCE.md",
@@ -161,8 +146,8 @@
     },
     {
       "path": "astra-site/index.html",
-      "bytes": 36416,
-      "sha256": "1b1a65ab2efeca3585cbe621bd04526820f5033b029d31741f14c631ab83e992"
+      "bytes": 36631,
+      "sha256": "46ad9abeb45c7b00cb45cb2618b6b4f90e5cf27504f3a9e17060ad893a039c69"
     },
     {
       "path": "astra/index.html",
@@ -171,8 +156,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 7906,
-      "sha256": "89abbf4936df724b5c1d3fe89f3a0e7b6de2646991605550f384ed72e300134b"
+      "bytes": 8613,
+      "sha256": "0d0bcbf78b54aec0fb23638803ad9cbb21bc657682f741256c9ade024b840aa7"
     },
     {
       "path": "cli/run.mjs",
@@ -311,8 +296,8 @@
     },
     {
       "path": "docs/INSTALL.md",
-      "bytes": 4899,
-      "sha256": "d2d0cee209c7c7ba8163e902197e35f958b81c5f4b1bc2521502f79444eab112"
+      "bytes": 6208,
+      "sha256": "1c805d4fc648c4563fcf65127759f8760ebdf37d148122b529375702cedcb01f"
     },
     {
       "path": "docs/JUDGE_ROUTE.md",
@@ -336,8 +321,8 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "bytes": 4048,
-      "sha256": "28d91c285748abe990e0f64864a78604f5d8cebd036c38230d50d893ab68a32b"
+      "bytes": 4050,
+      "sha256": "640a510c2aa1df31f0154d3a947c2061bea0f91dc0e25275a6b2fd40b817ac9c"
     },
     {
       "path": "docs/RUNTIME_ACCEPTANCE.md",
@@ -371,13 +356,13 @@
     },
     {
       "path": "docs/SUBMISSION.md",
-      "bytes": 5899,
-      "sha256": "0877e7783de4d09d78c5f4b7bf7571ac1052482ba2f85154f90cd42bfde3b9a2"
+      "bytes": 6453,
+      "sha256": "ec59c06cfcdca6639dda3e27a6281e3c772e7eb29b761f7238b5fac35bd1645a"
     },
     {
       "path": "docs/TESTING.md",
-      "bytes": 4973,
-      "sha256": "60b9b9ffe9ba0feb202b683456930edc9caffefa16027fcf3d5c49ae47c900ee"
+      "bytes": 5715,
+      "sha256": "6c5d2313e0fef951ea04545a26a8efa1f3faf1907e727ada94efa9545c8bfba9"
     },
     {
       "path": "docs/TOPOLOGY_LAB.md",
@@ -391,8 +376,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 10978,
-      "sha256": "3324ebab815ee70367e7469d4da5161965eb1f0aa4e9a56f8c0aba0d39430057"
+      "bytes": 14225,
+      "sha256": "d8b425c58095a0a6e25c85e79dd3f3f57ca6cf32d5f7651ea3f83a74aa7bd85e"
     },
     {
       "path": "docs/WORKSPACE_LAB.md",
@@ -730,24 +715,19 @@
       "sha256": "e54f98fa745f15314413c0e06ef3f3f6470e2ca180d3845f43a70a66f3d3b091"
     },
     {
-      "path": "next.config.ts",
-      "bytes": 104,
-      "sha256": "ab4c61f6ee100ae43610a18512f1ebcec842bb2405431e1009266173f21cf772"
-    },
-    {
       "path": "NOTICE",
       "bytes": 292,
       "sha256": "b5fe23d3ee84a4b4087f5fad3939ad070f4f10cd17dac363025a2d4784b1cf32"
     },
     {
       "path": "package-lock.json",
-      "bytes": 183744,
-      "sha256": "fbff3d80b374d7d6ea7ec05f1b05d255eb0d94fc968ac17adbfe664ac4a961bf"
+      "bytes": 51649,
+      "sha256": "13561b4cc377ebcc9a0b5dc356caac42f0aa13c0780ab66a9f6012f73a4cc0c4"
     },
     {
       "path": "package.json",
-      "bytes": 4328,
-      "sha256": "e5bdfbf1625ecb691963cf979f2e4db45483b1ea5f35a2a72ab64adb4325d8a2"
+      "bytes": 3752,
+      "sha256": "4ad4daad76c51b6392b3f634d6ee513e428f229af0513484b5a7086c74263b0c"
     },
     {
       "path": "public/assets/app.mjs",
@@ -961,8 +941,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 23636,
-      "sha256": "124c537c9d5de67c040b745ee03487c5b3490efb52fed19e01ffc57f3528c534"
+      "bytes": 24384,
+      "sha256": "3404e3947c5701caae407e364e0c14ac607648f85aba95833093776ae8c9bb98"
     },
     {
       "path": "runtime/auxiliary.mjs",
@@ -1046,8 +1026,8 @@
     },
     {
       "path": "SBOM.cdx.json",
-      "bytes": 223699,
-      "sha256": "8fdafec5828276a91d6581b711358509eaa3d174c10c767fc594a2d17d6e01f8"
+      "bytes": 65586,
+      "sha256": "4d5b634f1aed6731bddbd2b7fc8b74a9fc79dac9faa2b348ef298dc58bd4d0a0"
     },
     {
       "path": "scripts/amazon.mjs",
@@ -1073,6 +1053,11 @@
       "path": "scripts/build-astra-site.mjs",
       "bytes": 10482,
       "sha256": "cabf766ff0e251bc3e2edb2f4c909bdaa686a41e9247577d7741b39fa8b3d262"
+    },
+    {
+      "path": "scripts/build-static.mjs",
+      "bytes": 4258,
+      "sha256": "4b15ca84a62b5f6b40cdbfa4792160925fd466387f38725e55e899ab9e072124"
     },
     {
       "path": "scripts/check-isolation.mjs",
@@ -1121,8 +1106,8 @@
     },
     {
       "path": "scripts/lib/distribution-export.mjs",
-      "bytes": 8529,
-      "sha256": "9d9db32fb1e7c6742767cdcc546e43a6c303b8262c6cddafe13371f3aed562fa"
+      "bytes": 8525,
+      "sha256": "4b7077d257beb4c59b4c7e101aebd92b05090902c4c5e746c5042b46ebeca356"
     },
     {
       "path": "scripts/lib/doctor.mjs",
@@ -1158,6 +1143,11 @@
       "path": "scripts/lib/source-manifest.mjs",
       "bytes": 3120,
       "sha256": "fae0f9d85e72cd934c1e0bbcd6baf2ca8edb89903f320c8514afb32cab6bd75f"
+    },
+    {
+      "path": "scripts/lib/static-assets.mjs",
+      "bytes": 3496,
+      "sha256": "90c95ea2ebba4e01950e35b928b442da7ef48d5cd9260470f3b101aadc37066b"
     },
     {
       "path": "scripts/lib/workspace-pilot-verifier.mjs",
@@ -1201,8 +1191,8 @@
     },
     {
       "path": "scripts/serve.mjs",
-      "bytes": 3528,
-      "sha256": "3e0e580b3e69c387472fcfde5839fe13fb2f02db5fecf72931dd3d01c630001c"
+      "bytes": 4040,
+      "sha256": "5e6ea058ec19c5ff81d764678e086a232643367e08783b14d958bb3d80f71802"
     },
     {
       "path": "scripts/study-proof.mjs",
@@ -1213,6 +1203,11 @@
       "path": "scripts/study.mjs",
       "bytes": 4031,
       "sha256": "452948760291df1ea379ba34e13f05bd84be07afc8916b174911e996148325d1"
+    },
+    {
+      "path": "scripts/syntax-check.mjs",
+      "bytes": 2425,
+      "sha256": "11026e52819292a98b2c03e87ea415086c54d5eed7ce433ec5508a951e11d105"
     },
     {
       "path": "scripts/topology-proof.mjs",
@@ -1286,8 +1281,8 @@
     },
     {
       "path": "SECURITY.md",
-      "bytes": 2932,
-      "sha256": "d1d4f18a9753b201d75fda0e5f62c0c8dc0a692571d610b8fc347dd00c0b8b32"
+      "bytes": 4471,
+      "sha256": "caba63235797eb7480c611d300209be6072f6b19c2f87fd4cd9cf7d7c8337c66"
     },
     {
       "path": "server/amazon-lab.mjs",
@@ -1571,8 +1566,8 @@
     },
     {
       "path": "tests/development-boundary.test.mjs",
-      "bytes": 1864,
-      "sha256": "bb89e15ca693b14b14e8cb65b1cc61efa800d7fe0da1ba78dfc41eaf97ffbc31"
+      "bytes": 2547,
+      "sha256": "e5bc78be5c8b0029993a9ec490565cea915fdb16f2572782a1feb031d993913c"
     },
     {
       "path": "tests/email-integration.test.mjs",
@@ -1636,8 +1631,8 @@
     },
     {
       "path": "tests/release-packaging.test.mjs",
-      "bytes": 15941,
-      "sha256": "f811600ea53fcb0faf0196b099f4f68e824b194ad9cc7ca992c7d6fea08f6311"
+      "bytes": 16382,
+      "sha256": "7a1e6fcc7ef7faab4db2706029e27d79a7276826d61113bbef671617f40431ce"
     },
     {
       "path": "tests/response-governance.test.mjs",
@@ -1733,6 +1728,11 @@
       "path": "tests/social-oauth.test.mjs",
       "bytes": 18346,
       "sha256": "99d652c536aadb5bd5b23af5a66b87397ca85ec1f91745c7ef162464a9308ee4"
+    },
+    {
+      "path": "tests/static-build.test.mjs",
+      "bytes": 8023,
+      "sha256": "b9483aef33871802e1eed5c7377390676c8c2ff0f9bebbdd2166be5399347bc2"
     },
     {
       "path": "tests/study-http.test.mjs",
@@ -1841,18 +1841,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 2158,
-      "sha256": "0e9a7936c9f9873669076ae11d1eb935ece8da35208c7979a32dad9d7ef7c07d"
-    },
-    {
-      "path": "tsconfig.json",
-      "bytes": 671,
-      "sha256": "81aca06cd76be09d9b65c7dff6a031c38664263b506ea792a28f36b17be25f2a"
-    },
-    {
-      "path": "vite.config.ts",
-      "bytes": 576,
-      "sha256": "6c7b3a8e14a0a3189eed09f5068f080c1e526f82321634787f37511eff705796"
+      "bytes": 1860,
+      "sha256": "2f7c34a0232f550e11364010d37e8b8ab09e970b660c998ddcd93db3230d1bee"
     },
     {
       "path": "workbench/defense.css",

@@ -1,6 +1,28 @@
+# v0.13.1 validation — October 7, 2026
+
+v0.13.1 removes the unused redirect-only framework build. The [release record](https://github.com/Ranopha/dungeonq-astra/releases/tag/v0.13.1) binds the exact tag/commit/tree, CI run, downloaded runtime/container evidence and source/checksum assets. The v0.13.0 film and recorded consumer report keep their original version and scope.
+
+Local clean-export verification on Node 24.15.0 / macOS passed **500/500 tests**, three deterministic scenarios, source audit, syntax checking, static build and source-manifest verification. The full dependency audit reported **0 known vulnerabilities across 117 dependency nodes** at this checkpoint; this is a dated advisory snapshot. Browser readback exercised the original judge proof through matching digests and rejected unapproved apply to its separate approval control. Public CI and source-bound container results remain separately bound by the release record.
+
+| Gate | Evidence and interpretation |
+| --- | --- |
+| Clean installation and dependency graph | `npm ci --ignore-scripts`, `npm audit`, and absence of Vinext/braces and the removed build chain; exact counts and outcomes are in the release record. No audit suppression or affected-version alias. |
+| Source checks | `npm run check`: actual JavaScript syntax checks, test suite, deterministic scenarios, source audit and static build. Syntax validation does not establish semantic TypeScript safety. |
+| Static browser output | Original public asset bytes preserved; built manifest, local asset/module resolution, HTTP/MIME/security headers and rejected unsafe paths exercised. Manual browser workflow is checked separately. |
+| Public CI and runtime | Exact-source Ubuntu/macOS jobs plus a fresh source-bound 11-check runtime and 16-check container gate. A workflow file or earlier passing commit is not substitute evidence. |
+| Distribution integrity | Clean export, `npm run verify:source`, immutable source archive and downloadable SHA-256 checksums; hash verification establishes byte integrity only. |
+| Consumer and film | [v0.13.0 recorded report](../evidence/oss-integration-v1/report.json) and [film](https://youtu.be/8h5yeKb2XzE) remain a scripted artificial-resource demonstration. Fresh CI separately reruns the independent consumer against this source. |
+
+Unknown outcomes, production protection, external adoption and quantified deception efficacy remain outside these engineering checks. The patch changes browser packaging, not the runtime authority contract. See [SECURITY](../SECURITY.md) and [INSTALL](INSTALL.md).
+
+<details>
+<summary>Historical v0.13.0 and earlier validation records</summary>
+
 # v0.13.0 validation and publication record — October 7, 2026
 
 This source contains the locally verified v0.13.0 release candidate. The [immutable release record](https://github.com/Ranopha/dungeonq-astra/releases/tag/v0.13.0) is the authority for final publication: it binds the tag/commit, completed CI run, runtime/container evidence, archives and checksums. A candidate branch alone is not a released artifact. Earlier records below retain their original scope.
+
+Local clean-export verification on Node 24.15.0 / macOS passed **500/500 tests**, three deterministic scenarios, source audit, syntax checking, static build and source-manifest verification. The full dependency audit reported **0 known vulnerabilities across 117 dependency nodes** at this checkpoint; this is a dated advisory snapshot. Browser readback exercised the original judge proof through matching digests and rejected unapproved apply to its separate approval control. Public CI and source-bound container results remain separately bound by the release record.
 
 | Gate | Evidence and interpretation |
 | --- | --- |
@@ -71,5 +93,7 @@ Orders Workspace behavior checks cover HTTP/MCP parity, exact retry and changed-
 The two model sessions show qualified decoy-data acceptance, not sustained false origin belief. Their raw journals, final statements and the original metric's interpretation problem are retained in [the workspace guide](WORKSPACE_LAB.md). No new paid API call or independently attested Astra session is claimed. The previous live Astra proof remains unchanged.
 
 Source manifests, source archives, GitHub CI and the Sites deployment are separately inspectable records. Check the actual release revision; green local tests alone are not publication evidence.
+
+</details>
 
 </details>

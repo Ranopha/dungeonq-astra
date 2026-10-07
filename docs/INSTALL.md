@@ -1,4 +1,4 @@
-# Install, integrate, stop and recover — v0.13.0
+# Install, integrate, stop and recover — v0.13.1
 
 Use a source archive or a pinned commit of the public repository. `main` can contain a newer candidate than the latest release; check [VALIDATION](VALIDATION.md) and [release policy](RELEASE.md) before attributing results to a version. The package is private to prevent accidental npm publication; clone/download the open-source repository rather than looking for a published npm package.
 
@@ -36,7 +36,7 @@ Stop with Ctrl+C. Restart with the same directory and presentation to retain sta
 | `npm run amazon` / `npm run demo:proof` | Retained governed assistant and separately authenticated review profile |
 | `npm run defense:workspace` | Retained Orders Workspace with its own account, notification and rotation contracts |
 | `npm run study` / `npm run world` | Retained finite research instruments and original result boundaries |
-| `npm run dev` / `npm run build` | Retained browser shell; not the running server roles or a deployment |
+| `npm run dev` / `npm run build` / `npm start` | Node static source preview, asset build, and built preview; API-backed roles use their own commands |
 
 The Astra distribution additionally includes its bounded model-candidate profile; use [its repository documentation](https://github.com/Ranopha/dungeonq-astra/blob/main/docs/ASTRA.md) and free mock path before considering a paid call. Legacy account/email features do not automatically apply to the runtime owner token.
 
@@ -47,3 +47,18 @@ A refused write, exhausted ticket or missing capability can be an expected negat
 Run `npm run check` for the complete source checkpoint. On an intact release, `npm run verify:source` checks the inventory; for edited source, regenerate a clean distribution as described in [RELEASE](RELEASE.md). Full runtime admission also needs fresh [container acceptance](../deploy/runtime-reference/README.md) and the exact-source gate. A loopback run alone is not isolation acceptance.
 
 All resources are artificial. Do not expose the local profile with a public tunnel, disable TLS verification, upload credentials/private state, or attach it to a production target. For a reproducible problem, use [the feedback template](MAINTAINER_PLAN.md#trial-feedback-template).
+
+## Static source preview and build
+
+```sh
+npm run dev
+# In a separate invocation, after stopping that preview:
+npm run build
+npm start
+```
+
+The preview binds to `127.0.0.1:4174`; choose a different valid port with `DUNGEONQ_PORT`. Source assets keep their original bytes, MIME types and paths. The existing browser SDK is available at `/runtime/client.mjs`. Runtime/world/study/topology/defense pages depend on their own server-side routes, so start those workspaces with their documented commands. A static preview does not host their APIs.
+
+The build uses Node built-ins and writes `dist/static` plus an internal digest inventory. Rebuilding replaces only an empty directory or a previously generated, unchanged build. Unknown files, manually modified output, symlinks and private filenames are refused. Preserve any edits before changing such an output; the builder will not silently erase them. An optional `npm run build -- --out /absolute/path/new-directory` creates a separate static artifact; `npm start` previews the default `dist/static` directory.
+
+`npm run syntaxcheck` parses actual JavaScript source with `node --check`; no empty `typecheck` alias or TypeScript validation claim is retained. `npm run check` runs this check before the static build.
