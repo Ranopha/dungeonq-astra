@@ -4,11 +4,11 @@
 
 DungeonQ is an Apache-2.0 defensive deception runtime for AI-agent workflows. A designated session works in a persistent synthetic world while people and authorized defender agents observe activity and prepare a bounded response. Response time and separation are product goals; measured delay, general deception efficacy and production protection are not established.
 
-The current candidate adds a [standalone public-interface consumer](../examples/mcp-shipping-consumer/README.md), [external integration guide](EXTERNAL_INTEGRATION.md), [maintenance plan](MAINTAINER_PLAN.md), and aligned installation/contribution/release documentation. The actor client has no owner/origin capability; operator and artificial-origin checks remain separate scripted roles. This is a maintained integration example, not established external adoption or a new Astra experiment.
+The v0.13.0 release adds a [standalone public-interface consumer](../examples/mcp-shipping-consumer/README.md), [external integration guide](EXTERNAL_INTEGRATION.md), [maintenance plan](MAINTAINER_PLAN.md), and aligned installation/contribution/release documentation. The actor client has no owner/origin capability; operator and artificial-origin checks remain separate scripted roles. This is a maintained integration example, not established external adoption or a new Astra experiment.
 
 Run `npm ci --ignore-scripts`, then `npm run oss:demo -- /absolute/path/new-report.json` with a new output filename. Use [the manual route](JUDGE_ROUTE.md) for the actual participant/operator UI. [VALIDATION](VALIDATION.md) identifies current local, CI, container, release and film evidence; pending fields cannot support a publication claim.
 
-This later product update does not alter the closed September 18 Astra judging snapshot, original model calls, original film or launch schedule. Historical listing instructions below document that earlier state and are not current instructions to edit a closed challenge. The Amazon/current product film, when available, must be labeled separately from the original Astra film.
+This later product update does not alter the closed September 18 Astra judging snapshot, original model calls, original film or launch schedule. Historical listing instructions below document that earlier state and are not current instructions to edit a closed challenge. The [v0.13.0 product film](https://youtu.be/8h5yeKb2XzE) shows the current scripted consumer integration and remains separate from the original Astra film.
 
 <details>
 <summary>Preserved September Astra listing, model and film context</summary>
