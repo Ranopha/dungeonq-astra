@@ -1,3 +1,25 @@
+# v0.13.0 validation and publication record — October 7, 2026
+
+This source contains the locally verified v0.13.0 release candidate. The [immutable release record](https://github.com/Ranopha/dungeonq-astra/releases/tag/v0.13.0) is the authority for final publication: it binds the tag/commit, completed CI run, runtime/container evidence, archives and checksums. A candidate branch alone is not a released artifact. Earlier records below retain their original scope.
+
+| Gate | Evidence and interpretation |
+| --- | --- |
+| Source identity | Exact files and SHA-256 inventory in `RELEASE_MANIFEST.json`; final public commit/tree and tag are bound by the release record. |
+| Clean local Astra profile | Node 24.15.0 on macOS arm64: `npm ci --ignore-scripts`, `npm run check` and `npm run verify:source` passed; **496/496 tests**, 3 fixed-seed scenarios, zero source-audit findings, typecheck and build. |
+| Independent consumer | [Recorded v0.13.0 run](../evidence/oss-integration-v1/report.json), SHA-256 `90069a5282cad6c5f2c0bf9ca10a50e7cb32ec3af38c613f78e5c038c103ca71`: 8 scenes, 8 actor MCP requests, 7 runtime checks, denied owner endpoints and credential-file probe. Seven positive/negative tests pass. |
+| Public Ubuntu/macOS CI | The release record links the exact-source `Synthetic acceptance` run. It installs and audits the detached consumer package and saves fresh integration evidence. A workflow definition is not a passing run. |
+| Runtime/container gate | The same CI run must bind a complete 11-check runtime census and 16 container checks to its exact commit/tree. Its downloadable artifact is the current evidence; historical records below cannot substitute for it. |
+| Download integrity | Release assets contain the reviewed source archive and `SHA256SUMS`; source verification checks the extracted inventory. Hashes are byte integrity, not independent certification. |
+| English film | [v0.13.0 integration film](https://youtu.be/8h5yeKb2XzE), 130.67 seconds, English narration and 30-cue subtitles; eight scenes from the recorded run above. Full decode, timing and rendered-frame review passed. |
+| Dependency findings | [SECURITY](../SECURITY.md) lists the remaining unpatched braces build-tool advisory (six affected nodes), separate from the zero-finding private-data/source audit. The standalone consumer lockfile audit is clean at this date. |
+
+The independent consumer uses public MCP/HTTP and artificial resources. Its actor process does not receive operator or origin authority. The separate harness controls the operator fixture and independent origin checks; that remains maintainer-authored scripted evidence, not an independent human trial, a live model evaluation or external adoption. See [EXTERNAL_INTEGRATION](EXTERNAL_INTEGRATION.md).
+
+A full gate needs fresh complete evidence for the exact clean candidate. A locally passing consumer or full test suite cannot replace current container measurements or public release readback. UNKNOWN, missing, stale or mismatched evidence stays unresolved. Public CI does not itself prove protected-branch enforcement. No production protection, quantified response delay or general deception efficacy is established.
+
+<details>
+<summary>Historical validation records — v0.12.0 and earlier</summary>
+
 # v0.12.0 working-view and outcome validation — September 29, 2026
 
 The integrated development candidate passed **489/489 tests**, three fixed-seed scenario checks, a zero-finding source audit, typecheck and build on Node 24.15.0. Focused regressions include a write committed before response loss, unsigned/misbound refusal rejection, multiline persistence, participant HTTP write/readback and operator cross-context/adapter correlation. These use owned artificial fixtures and deterministic clients.
@@ -49,3 +71,5 @@ Orders Workspace behavior checks cover HTTP/MCP parity, exact retry and changed-
 The two model sessions show qualified decoy-data acceptance, not sustained false origin belief. Their raw journals, final statements and the original metric's interpretation problem are retained in [the workspace guide](WORKSPACE_LAB.md). No new paid API call or independently attested Astra session is claimed. The previous live Astra proof remains unchanged.
 
 Source manifests, source archives, GitHub CI and the Sites deployment are separately inspectable records. Check the actual release revision; green local tests alone are not publication evidence.
+
+</details>

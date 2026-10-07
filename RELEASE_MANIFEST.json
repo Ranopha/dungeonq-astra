@@ -1,13 +1,13 @@
 {
   "schemaVersion": "dungeonq.source-release/v1",
   "profile": "SYNTHETIC_ONLY",
-  "generatedAt": "2026-09-29T01:33:24.593Z",
+  "generatedAt": "2026-10-07T09:03:31.692Z",
   "privateHistoryIncluded": false,
   "entries": [
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 5363,
-      "sha256": "1b047e2c3fc0218db72870299b68a18e66467352f2da9634df308c9d9f47f4b9"
+      "bytes": 6076,
+      "sha256": "34134347d7e4c19b6e6ccfefcf8bdc9387eeb0acae03ec6ad6d2aecab9b66c2e"
     },
     {
       "path": ".gitignore",
@@ -161,8 +161,8 @@
     },
     {
       "path": "astra-site/index.html",
-      "bytes": 34627,
-      "sha256": "9409a6181ee315c77721397db2a97438a587af9fe85930ada6c8e4a5878874a7"
+      "bytes": 36416,
+      "sha256": "1b1a65ab2efeca3585cbe621bd04526820f5033b029d31741f14c631ab83e992"
     },
     {
       "path": "astra/index.html",
@@ -171,8 +171,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 7059,
-      "sha256": "7d7a9c6c8ccb24035cabd93f66b1e28c81fa83b4edd78a63a24f65d6ad337ab5"
+      "bytes": 7906,
+      "sha256": "89abbf4936df724b5c1d3fe89f3a0e7b6de2646991605550f384ed72e300134b"
     },
     {
       "path": "cli/run.mjs",
@@ -201,8 +201,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 2300,
-      "sha256": "a8eff2489742d4b3868c5fc39b8f5ae7af0c0086eb8e48068d9251e76a0f104f"
+      "bytes": 3659,
+      "sha256": "0ff65de7fbd6ab83d1fa345814ce5805449b4f56e07755e7dbea6994dd22113c"
     },
     {
       "path": "deploy/lab-isolation.json",
@@ -235,6 +235,11 @@
       "sha256": "b946f1ecd4b4d1ae9453da4ac5ddc05ab8e3869ea683bf6a8d73ec1e9c0a33af"
     },
     {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 3935,
+      "sha256": "eb42b0a3901998d288b833f41ed2d19d14214afc11be51140c71fbebc0b6516d"
+    },
+    {
       "path": "docs/ASTRA_LAUNCH_DEMO.md",
       "bytes": 3343,
       "sha256": "7d58522ddb3a6b9463b18a0e93fd00cbb237231923d752e26a3fc0832a51a9d4"
@@ -253,6 +258,11 @@
       "path": "docs/contracts/ORDERS_WORKSPACE_V1.md",
       "bytes": 3032,
       "sha256": "5b59931f142d2808dde6173f83fb8f2b86df392a73f2abf2b2cf578f169e87eb"
+    },
+    {
+      "path": "docs/contracts/OSS_INTEGRATION_V1.md",
+      "bytes": 2189,
+      "sha256": "932a13a926f24aeec8147f2ecde3fbfb15101e6850f89360f13a1ebefe11eac2"
     },
     {
       "path": "docs/contracts/RUNTIME_V1.md",
@@ -295,19 +305,39 @@
       "sha256": "96093539456195d4124c0d0461b8f3ff0413ad6205717af5147b271194c2733b"
     },
     {
+      "path": "docs/EXTERNAL_INTEGRATION.md",
+      "bytes": 7072,
+      "sha256": "f8075a636e3b7ac4a009bbdf99186afb0d3c9ab13e464f940d06a25afb62d37a"
+    },
+    {
+      "path": "docs/INSTALL.md",
+      "bytes": 4899,
+      "sha256": "d2d0cee209c7c7ba8163e902197e35f958b81c5f4b1bc2521502f79444eab112"
+    },
+    {
       "path": "docs/JUDGE_ROUTE.md",
-      "bytes": 8913,
-      "sha256": "ffd01ae0f30ed174bb3cc931b2dedfa8b4afb147114baeca7854588914bcc44d"
+      "bytes": 10201,
+      "sha256": "4842393cca34baf7cdbae457f402dde3329134c2bf06bbf8e94c3b3597b133e2"
+    },
+    {
+      "path": "docs/MAINTAINER_PLAN.md",
+      "bytes": 5920,
+      "sha256": "cd52ffc58e9e6a227f42c6815d08fae6608a65c8eb611dcb2345eabfbc7f7237"
     },
     {
       "path": "docs/OSS_REVIEW_GUIDE.md",
-      "bytes": 10219,
-      "sha256": "c48b55e25cafb3a87e01375372e837d3e91a6adba42d2482f894e390e3ddf075"
+      "bytes": 10458,
+      "sha256": "15f432b4f54c9072e4af3cbae3fea9a2d654611b6a27ed5403f9d709dc6a3626"
     },
     {
       "path": "docs/PRODUCT_HUNT.md",
       "bytes": 17889,
       "sha256": "650ce26b1ef1801cc6a1ad4768828b6e970893b4816aa21a5d1850e208fc5f0b"
+    },
+    {
+      "path": "docs/RELEASE.md",
+      "bytes": 4048,
+      "sha256": "28d91c285748abe990e0f64864a78604f5d8cebd036c38230d50d893ab68a32b"
     },
     {
       "path": "docs/RUNTIME_ACCEPTANCE.md",
@@ -326,8 +356,8 @@
     },
     {
       "path": "docs/START_HERE.zh-TW.md",
-      "bytes": 7648,
-      "sha256": "405e173d9e404c135ae6c0a6d22071014600c9603eda597afbb46740be165355"
+      "bytes": 11546,
+      "sha256": "bd290481e0e8dff0dfd828ccbaeb0adf8ba1760944cade9dd6017307dbc891ab"
     },
     {
       "path": "docs/STUDY_LAB.md",
@@ -341,13 +371,13 @@
     },
     {
       "path": "docs/SUBMISSION.md",
-      "bytes": 4085,
-      "sha256": "1c2ebe237474737457312b7f5387103e8683d8f60643907ac44bece81c50a380"
+      "bytes": 5851,
+      "sha256": "cbd7a5c76cc4ebae87ca13a9109aaf10877e062921e86a9568520648938459c2"
     },
     {
       "path": "docs/TESTING.md",
-      "bytes": 2426,
-      "sha256": "a869c2f270c9e6f2e2712906d7c2fd643cd915cd5bf5c4f31f62822e2075bbb4"
+      "bytes": 4973,
+      "sha256": "60b9b9ffe9ba0feb202b683456930edc9caffefa16027fcf3d5c49ae47c900ee"
     },
     {
       "path": "docs/TOPOLOGY_LAB.md",
@@ -361,8 +391,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 7687,
-      "sha256": "6d2256753c016642749fdef3d041a751ebc5b62fe9be0a291c2f57c1dbc93380"
+      "bytes": 10978,
+      "sha256": "3324ebab815ee70367e7469d4da5161965eb1f0aa4e9a56f8c0aba0d39430057"
     },
     {
       "path": "docs/WORKSPACE_LAB.md",
@@ -473,6 +503,16 @@
       "path": "evidence/model-events.json",
       "bytes": 3214,
       "sha256": "52e43d10b75207f653dd02ca2aa07fe0c616eec63647cb6e9571058faff5bd70"
+    },
+    {
+      "path": "evidence/oss-integration-v1/README.md",
+      "bytes": 1052,
+      "sha256": "6b52b7df45d69c7cab4ed2dacf0be840447051000e725496d7a0604fbf163e01"
+    },
+    {
+      "path": "evidence/oss-integration-v1/report.json",
+      "bytes": 8146,
+      "sha256": "90069a5282cad6c5f2c0bf9ca10a50e7cb32ec3af38c613f78e5c038c103ca71"
     },
     {
       "path": "evidence/report.json",
@@ -630,6 +670,36 @@
       "sha256": "61edc401b14fd5fa99cf4b5130a7eb1ff3888ee475f2e310d8bd42521beb2fb7"
     },
     {
+      "path": "examples/mcp-shipping-consumer/.gitignore",
+      "bytes": 20,
+      "sha256": "295aa1f18923880afebb2e08aa70a8c4f285cc52baea238b8d2864d10e45d825"
+    },
+    {
+      "path": "examples/mcp-shipping-consumer/cli.mjs",
+      "bytes": 1703,
+      "sha256": "9b59a94ea5df7f5689cbbea2a9bdd6c51386c46dbf5b1354e80d447c3d74d35f"
+    },
+    {
+      "path": "examples/mcp-shipping-consumer/client.mjs",
+      "bytes": 6584,
+      "sha256": "ebe593bb7a8daf1884102b3d3604ce0df945734b24fbf493cfd0b465b8f9e570"
+    },
+    {
+      "path": "examples/mcp-shipping-consumer/package-lock.json",
+      "bytes": 42460,
+      "sha256": "00ed11789ac17a29ad2f08355c62adb3e8ddc2a8bb08f601ade8e86b9ac8db77"
+    },
+    {
+      "path": "examples/mcp-shipping-consumer/package.json",
+      "bytes": 370,
+      "sha256": "9a71d9cd5f1693d356c3834280a14d31dcf8f0c1e006b32e06b8944e874ab41f"
+    },
+    {
+      "path": "examples/mcp-shipping-consumer/README.md",
+      "bytes": 4609,
+      "sha256": "d52a420d6e1e7cd28a7f4fb706b9aa4f23068f929a133f9b679ac365e6620423"
+    },
+    {
       "path": "LICENSE",
       "bytes": 11358,
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
@@ -671,13 +741,13 @@
     },
     {
       "path": "package-lock.json",
-      "bytes": 183763,
-      "sha256": "52eded67679757e961dfbb867241dd76f63746f0f635be7e2c9aadcb8ab88b8f"
+      "bytes": 183744,
+      "sha256": "fbff3d80b374d7d6ea7ec05f1b05d255eb0d94fc968ac17adbfe664ac4a961bf"
     },
     {
       "path": "package.json",
-      "bytes": 4160,
-      "sha256": "f609f8d3f015713fd58fd87530b654ea219b436bdca59d1e02fad78c69d7e662"
+      "bytes": 4328,
+      "sha256": "e5bdfbf1625ecb691963cf979f2e4db45483b1ea5f35a2a72ab64adb4325d8a2"
     },
     {
       "path": "public/assets/app.mjs",
@@ -891,8 +961,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 21539,
-      "sha256": "b4aac6a799c0b88d8a8e90ed2b386fabced0ad610484c12fbe9385a78ac997f8"
+      "bytes": 23435,
+      "sha256": "5c8680ee4602c273df326df5f15e7c0b4854aee0cc90000463c7806b74e2734c"
     },
     {
       "path": "runtime/auxiliary.mjs",
@@ -976,8 +1046,8 @@
     },
     {
       "path": "SBOM.cdx.json",
-      "bytes": 224850,
-      "sha256": "4b55b52f7a7710c476f9b3e3a6754372e08ed42a2d97fb5395643635110734fa"
+      "bytes": 223699,
+      "sha256": "8bdfe191f40e312fc952fbaf1780aa6159f275c03a2d9f3815880fd911c6c640"
     },
     {
       "path": "scripts/amazon.mjs",
@@ -1051,8 +1121,8 @@
     },
     {
       "path": "scripts/lib/distribution-export.mjs",
-      "bytes": 8295,
-      "sha256": "1047b0fc7328a4f45bb06257ad5d25cd26a47eab22ebc6f3de14694e4fa54463"
+      "bytes": 8529,
+      "sha256": "9d9db32fb1e7c6742767cdcc546e43a6c303b8262c6cddafe13371f3aed562fa"
     },
     {
       "path": "scripts/lib/doctor.mjs",
@@ -1098,6 +1168,11 @@
       "path": "scripts/mcp-client.mjs",
       "bytes": 1810,
       "sha256": "6bc4055f32612db2ff1feca39245e5c1b620e77004bc61350f2a1b8a96760891"
+    },
+    {
+      "path": "scripts/oss-integration-demo.mjs",
+      "bytes": 15133,
+      "sha256": "650e3c737f16f7d2f9d3f04a2e6e770ef12f2cb1bb713e5342b79aa1aa953d87"
     },
     {
       "path": "scripts/prepare-release.mjs",
@@ -1211,8 +1286,8 @@
     },
     {
       "path": "SECURITY.md",
-      "bytes": 1631,
-      "sha256": "a7022eff279d403e9a9d0ea23a37ca8f3b48dc6bb22d6e978500468736813b85"
+      "bytes": 2932,
+      "sha256": "d1d4f18a9753b201d75fda0e5f62c0c8dc0a692571d610b8fc347dd00c0b8b32"
     },
     {
       "path": "server/amazon-lab.mjs",
@@ -1550,14 +1625,19 @@
       "sha256": "341702bba88926a20c71a72c1e06176e0f5db7ab54ced56e677778b3005815d8"
     },
     {
+      "path": "tests/oss-integration.test.mjs",
+      "bytes": 8397,
+      "sha256": "5f8a1b46200e6b81600b8f79ff57b4eac6c8c6cb9b3e47e5ca69265685405b7c"
+    },
+    {
       "path": "tests/platform-tools.test.mjs",
       "bytes": 9507,
       "sha256": "3c8b8c2ccafc0caf3a62e11839d6dc3fbdde10064cfad8071a09a5a23144cc88"
     },
     {
       "path": "tests/release-packaging.test.mjs",
-      "bytes": 14769,
-      "sha256": "bc4b2a3c6b3a2ac6a0d7ddb6145a9c525531baa1afbe03be933ed960e2869b0f"
+      "bytes": 15941,
+      "sha256": "f811600ea53fcb0faf0196b099f4f68e824b194ad9cc7ca992c7d6fea08f6311"
     },
     {
       "path": "tests/response-governance.test.mjs",
